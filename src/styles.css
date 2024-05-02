@@ -927,17 +927,18 @@ h1 {
 .carrito-vacio {
   display: none;
   position: sticky;
-  color: #333;
+  color: white;
   top: var(--nav-height);
   z-index: 98;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1600px;
+  opacity: 0.9;
   text-align: right;
   right: 0;
   font-size: x-large;
-  padding: 2rem 0 2rem 0;
+  padding: 2rem 2rem 2rem 0;
+  background-color: darkslateblue;
 }
-
 .carrito-active {
   display: flex;
   flex-direction: column;

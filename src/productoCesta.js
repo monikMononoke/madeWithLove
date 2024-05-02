@@ -1,4 +1,5 @@
 import { productos } from "./productos.js";
+import { carritoVacio } from "./constantes.js";
 
 let carrito = [];
 
@@ -9,6 +10,12 @@ export const botonAniadir = () => {
     boton.addEventListener("click", () => {
       const idProducto = parseInt(boton.getAttribute("data-id"));
       agregarProductoAlCarrito(idProducto);
+
+      carritoVacio.textContent = "Producto añadido a la cesta";
+      carritoVacio.style.display = "block";
+      setTimeout(() => {
+        carritoVacio.style.display = "none";
+      }, 3000);
     })
   );
 };
@@ -68,7 +75,7 @@ export const loadCarrito = () => {
     const divCarrito = document.querySelector(".carrito-main");
 
     if (carrito.length < 1) {
-      const carritoVacio = document.querySelector(".carrito-vacio");
+      carritoVacio.textContent = "Tu carrito está vacío";
       carritoVacio.style.display = "block";
       setTimeout(() => {
         carritoVacio.style.display = "none";
