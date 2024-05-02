@@ -931,7 +931,7 @@ h1 {
   top: var(--nav-height);
   z-index: 98;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1700px;
   opacity: 0.9;
   text-align: right;
   right: 0;

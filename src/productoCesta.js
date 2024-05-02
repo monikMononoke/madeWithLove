@@ -15,7 +15,7 @@ export const botonAniadir = () => {
       carritoVacio.style.display = "block";
       setTimeout(() => {
         carritoVacio.style.display = "none";
-      }, 3000);
+      }, 1500);
     })
   );
 };
@@ -79,7 +79,7 @@ export const loadCarrito = () => {
       carritoVacio.style.display = "block";
       setTimeout(() => {
         carritoVacio.style.display = "none";
-      }, 3000);
+      }, 2000);
     } else {
       const main = document.querySelector("main");
       main.style.display = "none";
