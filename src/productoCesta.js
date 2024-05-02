@@ -44,6 +44,7 @@ const mostrarCarrito = () => {
     <div class="descripcion">
     <p class="titulo">${item.producto.producto}</p>
     <p class="cantidad">Cantidad: ${item.cantidad}</p>
+    <p class = "precio-producto">Precio: ${item.precioTotal}</p>
     </div>
     `;
     listaCarrito.appendChild(li);
@@ -64,7 +65,7 @@ export const loadCarrito = () => {
   const iconoCarrito = document.querySelector("#icono-carrito");
   iconoCarrito.addEventListener("click", () => {
     console.log("click");
-    const divCarrito = document.querySelector(".carrito-contenedor");
+    const divCarrito = document.querySelector(".carrito-main");
 
     if (carrito.length < 1) {
       const carritoVacio = document.querySelector(".carrito-vacio");
@@ -84,7 +85,7 @@ export const loadCarrito = () => {
 };
 
 const cerrarCarrito = () => {
-  const divCarrito = document.querySelector(".carrito-contenedor");
+  const divCarrito = document.querySelector(".carrito-main");
   const main = document.querySelector("main");
   const cerrar = document.querySelector(".cerrar-carrito");
   cerrar.addEventListener("click", () => {
