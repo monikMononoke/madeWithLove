@@ -15,7 +15,7 @@ export const botonAniadir = () => {
       carritoVacio.style.display = "block";
       setTimeout(() => {
         carritoVacio.style.display = "none";
-      }, 1500);
+      }, 3000);
     })
   );
 };
@@ -55,6 +55,14 @@ const mostrarCarrito = () => {
     </div>
     `;
     listaCarrito.appendChild(li);
+
+    const botonEliminar = document.createElement("button");
+    botonEliminar.textContent = "Eliminar";
+    li.appendChild(botonEliminar);
+
+    botonEliminar.addEventListener("click", () => {
+      eliminarProductoDelCarrito(item.producto.id);
+    });
   });
 };
 
@@ -71,7 +79,6 @@ const actualizaPrecioTotalCarrito = () => {
 export const loadCarrito = () => {
   const iconoCarrito = document.querySelector("#icono-carrito");
   iconoCarrito.addEventListener("click", () => {
-    console.log("click");
     const divCarrito = document.querySelector(".carrito-main");
 
     if (carrito.length < 1) {
@@ -79,7 +86,7 @@ export const loadCarrito = () => {
       carritoVacio.style.display = "block";
       setTimeout(() => {
         carritoVacio.style.display = "none";
-      }, 2000);
+      }, 3000);
     } else {
       const main = document.querySelector("main");
       main.style.display = "none";
@@ -99,4 +106,10 @@ const cerrarCarrito = () => {
     divCarrito.style.display = "none";
     main.style.display = "block";
   });
+};
+
+const eliminarProductoDelCarrito = (id) => {
+  carrito = carrito.filter((item) => item.producto.id !== id);
+  actualizaPrecioTotalCarrito();
+  mostrarCarrito();
 };
