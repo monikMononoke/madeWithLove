@@ -2,7 +2,7 @@ import { productos } from "./productos.js";
 import { divContenedor, divProductosDestacados } from "./constantes.js";
 import { ocultarProducto } from "./ocultarProducto.js";
 import { detectarAnchoVentana, ventanaOnResize } from "./anchoDeVentana.js";
-import { botonAniadir } from "./productoCesta.js";
+import { botonAniadir } from "./gestionCarrito.js";
 
 export const handlerMostrarProducto = () => {
   const divImagen = document.querySelectorAll(".productos__destacados-img");
