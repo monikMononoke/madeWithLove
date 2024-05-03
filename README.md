@@ -1,7 +1,7 @@
 ### Requisitos:
 
-- Tener instalados Node.js y npm
+- Tener instalado Node.js
 
-#### Para abrir la aplicación en el navegador:
-
-- Ejecutar comando npm run dev
+#### En consola o en terminal de Visual Studio code, dentro de la carpeta del proyecto, ejecuar los comandos :
+- npm install
+- npm run dev
