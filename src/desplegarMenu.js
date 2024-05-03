@@ -27,8 +27,10 @@ export const handlerDesplegarMenu = () => {
 
 const plegarMenu = () => {
   const menuDesplegable = document.querySelector(".nav__list");
-  menuDesplegable.classList.add("menu__desplegado");
-  menuDesplegable.style.display = "flex";
-  menuDesplegable.style.flexDirection = "row";
-  menuDesplegable.style.justifyContent = "space-between";
+  if (menuDesplegable.className === "menu__desplegado") {
+    menuDesplegable.style.display = "flex";
+    menuDesplegable.style.flexDirection = "row";
+    menuDesplegable.style.justifyContent = "space-between";
+  }
+  menuDesplegable.classList.remove("menu__desplegado");
 };
