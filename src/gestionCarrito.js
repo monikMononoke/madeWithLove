@@ -48,17 +48,21 @@ const mostrarCarrito = (carrito) => {
     const li = document.createElement("li");
 
     li.innerHTML = `
+    <div class="tarjeta-producto">
     <img src="${item.producto.imagen}"/>
     <div class="descripcion">
-    <p class="titulo">${item.producto.producto}</p>
-    <p class="cantidad">Cantidad: ${item.cantidad}</p>
-    <p class = "precio-producto">Precio: ${item.precioTotal}</p>
+    <p class="titulo"><strong>${item.producto.producto}</strong></p>
+    <p class="cantidad">Cantidad: <strong>${item.cantidad}</strong></p>
+    <p class = "precio-producto">Precio: <strong>${item.precioTotal}€</strong></p>
+    </div>
     </div>
     `;
+
     listaCarrito.appendChild(li);
 
     const botonEliminar = document.createElement("button");
-    botonEliminar.textContent = "Eliminar";
+    botonEliminar.classList.add("boton-eliminar");
+    botonEliminar.textContent = "Eliminar producto de le cesta";
     li.appendChild(botonEliminar);
 
     botonEliminar.addEventListener("click", () => {
