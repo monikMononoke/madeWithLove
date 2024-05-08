@@ -5,6 +5,8 @@ export const productos = [
     imagen: "./assets/images/blocks-dog.png",
     descripcion: "Perrito",
     precio: 24.99,
+    categoria: "0-1",
+    subcategoria: "puzzles",
   },
   {
     id: 1,
@@ -12,6 +14,8 @@ export const productos = [
     imagen: "./assets/images/bunnies.jpg",
     descripcion: "Dos conejitos de madera",
     precio: 14.99,
+    categoria: "1-3",
+    subcategoria: "animales",
   },
   {
     id: 2,
@@ -19,6 +23,8 @@ export const productos = [
     imagen: "./assets/images/bunny-toddler.jpg",
     descripcion: "Conejito con carrito",
     precio: 10.99,
+    categoria: "1-3",
+    subcategoria: "animales",
   },
   {
     id: 3,
@@ -26,6 +32,8 @@ export const productos = [
     imagen: "./assets/images/calendar.png",
     descripcion: "Calendario para aprender los diás y las fechas",
     precio: 23.99,
+    categoria: "3+",
+    subcategoria: "didacticos",
   },
   {
     id: 4,
@@ -33,6 +41,8 @@ export const productos = [
     imagen: "./assets/images/camara.jpg",
     descripcion: "Cámara de fotos con trípode",
     precio: 49.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
   {
     id: 5,
@@ -40,6 +50,8 @@ export const productos = [
     imagen: "./assets/images/camara.jpg",
     descripcion: "Cámara de rodaje vintage",
     precio: 49.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
 
   {
@@ -48,6 +60,8 @@ export const productos = [
     imagen: "./assets/images/carusel.png",
     descripcion: "Caja musical con tapadera en forma de carusel",
     precio: 51.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
   {
     id: 7,
@@ -55,6 +69,8 @@ export const productos = [
     imagen: "./assets/images/chameleon_baby.jpg",
     descripcion: "Camaleón de color verde con ruedas",
     precio: 24.99,
+    categoria: "0-1",
+    subcategoria: "animales",
   },
   {
     id: 8,
@@ -62,6 +78,8 @@ export const productos = [
     imagen: "./assets/images/clock.jpg",
     descripcion: "Es hora de aprender las horas del relój",
     precio: 15.99,
+    categoria: "3+",
+    subcategoria: "didacticos",
   },
   {
     id: 9,
@@ -69,6 +87,8 @@ export const productos = [
     imagen: "./assets/images/coffemachine.jpg",
     descripcion: "Cafetera con taza y cucharita",
     precio: 44.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
   {
     id: 10,
@@ -76,6 +96,8 @@ export const productos = [
     imagen: "./assets/images/cows.jpg",
     descripcion: "Una familia feliz de vacas pastando",
     precio: 15.99,
+    categoria: "1-3",
+    subcategoria: "animales",
   },
   {
     id: 11,
@@ -83,6 +105,8 @@ export const productos = [
     imagen: "./assets/images/cubes-baby.jpg",
     descripcion: "Bloques d emadera con las letras del abecedario",
     precio: 11.99,
+    categoria: "1-3",
+    subcategoria: "puzzles",
   },
   {
     id: 12,
@@ -90,6 +114,8 @@ export const productos = [
     imagen: "./assets/images/deer.jpg",
     descripcion: "Mamá cierva con su bebé cervatillo",
     precio: 11.99,
+    categoria: "1-3",
+    subcategoria: "animales",
   },
   {
     id: 13,
@@ -97,6 +123,8 @@ export const productos = [
     imagen: "./assets/images/ducks.jpg",
     descripcion: "Una pareja de gansos",
     precio: 11.99,
+    categoria: "1-3",
+    subcategoria: "animales",
   },
   {
     id: 14,
@@ -105,6 +133,8 @@ export const productos = [
     descripcion:
       "Un puzzle para aprender las formas geometricas y desarrollar la lógica",
     precio: 12.99,
+    categoria: "1-3",
+    subcategoria: "puzzles",
   },
   {
     id: 15,
@@ -112,6 +142,8 @@ export const productos = [
     imagen: "./assets/images/fox.jpg",
     descripcion: "Una pareja de zorros disfrutando del sol",
     precio: 12.99,
+    categoria: "1-3",
+    subcategoria: "animales",
   },
   {
     id: 16,
@@ -120,6 +152,8 @@ export const productos = [
     descripcion:
       "Si te gusta cuidar de las plantas de tu jardín este será tu set preferido",
     precio: 44.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
   {
     id: 17,
@@ -127,6 +161,8 @@ export const productos = [
     imagen: "./assets/hellicopter.jpg",
     descripcion: "Pequeño helicóptero con ruedas",
     precio: 12.99,
+    categoria: "1-3",
+    subcategoria: "vehiculos",
   },
   {
     id: 18,
@@ -134,6 +170,8 @@ export const productos = [
     imagen: "./assets/images/hippo.png",
     descripcion: "Un hipopótamo dandose un paseo",
     precio: 17.99,
+    categoria: "1-3",
+    subcategoria: "animales",
   },
   {
     id: 19,
@@ -142,6 +180,8 @@ export const productos = [
     descripcion:
       "Set de conos de helado. Puedes hacer las combinaciones que más te gusten!",
     precio: 13.99,
+    categoria: "3+",
+    subcategoria: "puzzles",
   },
   {
     id: 20,
@@ -150,6 +190,8 @@ export const productos = [
     descripcion:
       "Un todoterreno que consigue atravesar los terrenos más difíciles",
     precio: 17.99,
+    categoria: "3+",
+    subcategoria: "vehiculos",
   },
   {
     id: 21,
@@ -158,6 +200,8 @@ export const productos = [
     descripcion:
       "Vamos a aprender para qué sirve la batidora y como se utiliza",
     precio: 22.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
   {
     id: 22,
@@ -165,6 +209,8 @@ export const productos = [
     imagen: "./assets/images/numbers.jpg",
     descripcion: "Te gustaría aprender los números hasta 10?",
     precio: 17.99,
+    categoria: "3+",
+    subcategoria: "puzzles",
   },
   {
     id: 23,
@@ -172,6 +218,8 @@ export const productos = [
     imagen: "./assets/images/plancha.jpg",
     descripcion: "Quieres ayudar a mamá a planchar la ropa?",
     precio: 17.99,
+    categoria: "1-3",
+    subcategoria: "sets",
   },
   {
     id: 24,
@@ -180,6 +228,8 @@ export const productos = [
     descripcion:
       "Un divertido puzzle compuesto por piezas con formas de animales",
     precio: 11.99,
+    categoria: "1-3",
+    subcategoria: "puzzles",
   },
   {
     id: 25,
@@ -188,6 +238,8 @@ export const productos = [
     descripcion:
       "Un puzzle en forma de torre compuesto de circulos. No hay un orden correcto! Puedes apilarlos como te guste",
     precio: 16.99,
+    categoria: "1-3",
+    subcategoria: "puzzles",
   },
   {
     id: 26,
@@ -195,6 +247,8 @@ export const productos = [
     imagen: "./assets/images/puzzle-dino-baby.jpg",
     descripcion: "Un divertido puzzle en forma de dinosaurio",
     precio: 19.99,
+    categoria: "1-3",
+    subcategoria: "puzzles",
   },
   {
     id: 27,
@@ -202,6 +256,8 @@ export const productos = [
     imagen: "./assets/images/puzzle-strawberry",
     descripcion: "Un divertido puzzle en forma de fresa",
     precio: 13.99,
+    categoria: "1-3",
+    subcategoria: "puzzles",
   },
   {
     id: 28,
@@ -209,6 +265,8 @@ export const productos = [
     imagen: "./assets/images/rainbow-puzzle.jpg",
     descripcion: "Un colorido puzzle en forma de arcoiris",
     precio: 13.99,
+    categoria: "1-3",
+    subcategoria: "puzzles",
   },
   {
     id: 29,
@@ -216,6 +274,8 @@ export const productos = [
     imagen: "./assets/images/rhino-baby.jpg",
     descripcion: "Un bonito rinoceronte con ruedas",
     precio: 19.99,
+    categoria: "1-3",
+    subcategoria: "animales",
   },
   {
     id: 30,
@@ -223,6 +283,8 @@ export const productos = [
     imagen: "./assets/images/rocket+human.jpg",
     descripcion: "Un cohete ultra rápido para explorar el espacio!",
     precio: 21.99,
+    categoria: "1-3",
+    subcategoria: "vehiculos",
   },
   {
     id: 31,
@@ -230,6 +292,8 @@ export const productos = [
     imagen: "./assets/images/set_safari.jpg",
     descripcion: "Te apetece un safari por la Sabana?",
     precio: 25.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
   {
     id: 32,
@@ -238,6 +302,8 @@ export const productos = [
     descripcion:
       "Qué divertido es cocinar! De qué equipo eres, ¿dulce o salado?",
     precio: 45.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
   {
     id: 33,
@@ -245,6 +311,8 @@ export const productos = [
     imagen: "./assets/images/set-math3.jpg",
     descripcion: "Te apetece aprender a sumar y restar con bolitas fluffy?",
     precio: 15.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
   {
     id: 34,
@@ -252,6 +320,8 @@ export const productos = [
     imagen: "./assets/images/set-music.jpg",
     descripcion: "Quien quiere organizar el mejor concierto de la ciudad?",
     precio: 35.99,
+    categoria: "1-3",
+    subcategoria: "sets",
   },
   {
     id: 35,
@@ -260,6 +330,8 @@ export const productos = [
     descripcion:
       "Ya es la hora del té? Esta será tu vajilla favorita de ahora en adelante!",
     precio: 45.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
   {
     id: 36,
@@ -268,6 +340,8 @@ export const productos = [
     descripcion:
       "Un set en el que te puedes adentrar al bosque y conocer sus habitantes. Quizas os hacéis amigos!",
     precio: 27.99,
+    categoria: "3+",
+    subcategoria: "sets",
   },
   {
     id: 37,
@@ -276,6 +350,8 @@ export const productos = [
     descripcion:
       "Unas cuantas amables oevjitas pastando en el monte y disfrutando de su tranquilidad",
     precio: 23.99,
+    categoria: "1-3",
+    subcategoria: "animales",
   },
   {
     id: 38,
@@ -284,6 +360,8 @@ export const productos = [
     descripcion:
       "El taxi más molón de la ciudad! Donde llevarás a tus amigos con tu nuevo coche?",
     precio: 19.99,
+    categoria: "3+",
+    subcategoria: "vehiculos",
   },
   {
     id: 39,
@@ -292,6 +370,8 @@ export const productos = [
     descripcion:
       "Para pasar un rato divertido y aprender a desarrollar la lógica. Un juego estupendo!",
     precio: 14.99,
+    categoria: "3+",
+    subcategoria: "didacticos",
   },
   {
     id: 40,
@@ -299,6 +379,8 @@ export const productos = [
     imagen: "./assets/images/train.png",
     descripcion: "Quien se monta al tren más rápido? Tu-tuuu!",
     precio: 26.99,
+    categoria: "1-3",
+    subcategoria: "vehiculos",
   },
   {
     id: 41,
@@ -306,6 +388,8 @@ export const productos = [
     imagen: "./assets/images/ufo-alien.png",
     descripcion: "El extraterrestre más molón del Sistema Solar!",
     precio: 21.99,
+    categoria: "3+",
+    subcategoria: "vehiculos",
   },
   {
     id: 42,
@@ -314,6 +398,8 @@ export const productos = [
     descripcion:
       "Sabes qué tiempo hace fuera? Si la respuesta es no, yo te ayudaré a aprender!",
     precio: 24.99,
+    categoria: "3+",
+    subcategoria: "didacticos",
   },
   {
     id: 43,
@@ -322,6 +408,8 @@ export const productos = [
     descripcion:
       "Un leñador que está recogiendo leña para que su familia esté calentita. Le ayudas?",
     precio: 21.99,
+    categoria: "1-3",
+    subcategoria: "vehiculos",
   },
   {
     id: 44,
@@ -330,6 +418,8 @@ export const productos = [
     descripcion:
       "Son rocas o es madera? Te he pillado! Es madera! A ver si puedes hacer una torre sin que se caiga!",
     precio: 18.99,
+    categoria: "1-3",
+    subcategoria: "puzzles",
   },
   {
     id: 45,
@@ -338,5 +428,7 @@ export const productos = [
     descripcion:
       "Sabes como se forman las palabras? Si conoces el abecedario ya tienes medio camino camino hecho! Esto será pan comido!",
     precio: 21.99,
+    categoria: "3+",
+    subcategoria: "didacticos",
   },
 ];

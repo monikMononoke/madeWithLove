@@ -1,3 +1,9 @@
+export const menuIcon = document.querySelector(".menu__icon");
+
+export const nav = document.querySelector(".nav");
+
+export const main = document.querySelector("main");
+
 export const divContenedor = document.querySelector(
   ".productos__destacados-container"
 );
@@ -12,3 +18,5 @@ export const headerProductosDestacados =
   document.querySelector(".productos-h2");
 
 export const carritoVacio = document.querySelector(".carrito-vacio");
+
+export const loginForm = document.querySelector(".login");

@@ -81,7 +81,7 @@ const actualizaPrecioTotalCarrito = () => {
   ).textContent = `Precio total: ${precioTotalCarrito.toFixed(2)}€`;
 };
 
-export const loadCarrito = () => {
+export const cargarCarrito = () => {
   recuperarCarrito();
   const iconoCarrito = document.querySelector("#icono-carrito");
   iconoCarrito.addEventListener("click", () => {

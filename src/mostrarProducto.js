@@ -8,6 +8,7 @@ export const handlerMostrarProducto = () => {
   const divImagen = document.querySelectorAll(".productos__destacados-img");
   divImagen.forEach((producto) => {
     producto.addEventListener("click", () => {
+      window.scrollTo(0, 760);
       mostrarProducto(producto);
       botonAniadir();
     });

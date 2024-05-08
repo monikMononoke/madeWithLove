@@ -1,6 +1,6 @@
+import { nav, menuIcon } from "./constantes.js";
+
 export const handlerDesplegarMenu = () => {
-  const menuIcon = document.querySelector(".menu__icon");
-  const nav = document.querySelector(".nav");
   nav.style.overflow = "hidden";
   menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle("change");
@@ -12,7 +12,7 @@ export const handlerDesplegarMenu = () => {
       nav.style.height = "7rem";
       setTimeout(() => {
         plegarMenu();
-      }, 1000);
+      }, 800);
     }
   });
 

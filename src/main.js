@@ -1,9 +1,11 @@
 import { handlerMostrarProducto } from "./mostrarProducto.js";
 import { handlerDesplegarMenu } from "./desplegarMenu.js";
-import { loadCarrito } from "./gestionCarrito.js";
+import { cargarCarrito } from "./gestionCarrito.js";
+import { mostrarFormulario } from "./perfilUsuario.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   handlerDesplegarMenu();
   handlerMostrarProducto();
-  loadCarrito();
+  cargarCarrito();
+  mostrarFormulario();
 });

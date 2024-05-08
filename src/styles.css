@@ -457,14 +457,13 @@ h1 {
   font-family: var(--hero-text);
   font-size: 1.2rem;
   margin-left: 7%;
-  margin-top: 40px;
+  margin-top: 36px;
   margin-bottom: 12px;
 }
 
 .product__icon a {
   text-decoration: none;
   color: #333;
-  font-size: large;
 }
 
 .producto-active {
@@ -548,29 +547,34 @@ h1 {
 .producto-active-small {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
   background: #ffe8cf;
   border-radius: 25px;
-  padding: 15px;
+  padding: 10px;
+  gap: 5px;
 }
 
-.producto-active-small > .producto-active-texto {
+.producto-active-small .producto-active-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   margin-top: 12px;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 35%;
 }
 
-.producto-active-small > .producto-active-img {
+.producto-active-small .producto-active-img {
   height: auto;
   flex-shrink: 2;
-  width: 90%;
+  width: 80%;
   max-width: 450px;
 }
 
 .producto-active-small .producto-active-texto > h2 {
   margin-top: 10px;
+  width: 100%;
   font-size: large;
   text-align: center;
 }
@@ -579,11 +583,13 @@ h1 {
   margin-left: 3%;
   font-family: var(--p-font-family);
   font-size: 1rem;
-  text-align: left;
+  text-align: center;
+  width: 90%;
 }
 
 .producto-active-small .producto-active-texto > .producto-active-precio {
   margin-top: 3%;
+  margin-right: 5px;
   font-size: 1.1rem;
   transform: translateX(1%);
   font-family: var(--p-font-family);
@@ -754,10 +760,10 @@ h1 {
   padding: 3rem 2rem 0 2rem;
   margin: 0 auto;
   margin-bottom: 0;
+  height: var(--nav-height);
   background-color: #7d6f86;
   box-shadow: 1px 1px 2px 2px #7d6f86;
   transition: all linear 1500;
-  height: var(--nav-height);
 }
 
 .redes,
@@ -868,6 +874,7 @@ h1 {
   }
 }
 
+/* PÁGINA CARRITO */
 .carrito-main {
   display: none;
   flex-direction: column;
@@ -880,6 +887,7 @@ h1 {
 }
 
 .carrito-contenedor {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
@@ -897,7 +905,7 @@ h1 {
   justify-content: flex-start;
   gap: 24px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   margin-right: 5%;
   padding: 1rem;
@@ -1010,5 +1018,106 @@ h1 {
 
 .procesar h3 {
   padding: 1.8rem;
+  font-weight: 400;
+}
+
+/*  PERFIL DE USUARIO */
+.login {
+  display: none;
+  background-color: #a6d0ed;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-formulario {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background: #f1efeb;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formulario {
+  font-family: var(--p-font-family);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  transform: translateY(-50px);
+  width: 200px;
+}
+
+.formulario input {
+  border: none;
+  height: 25px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+
+.tab {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #333;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 1rem;
+  width: 100%;
+}
+
+.tablinks-1,
+.tablinks-2 {
+  font-size: 1rem;
+  font-family: var(--p-font-family);
+  text-transform: uppercase;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tabcontent-2 {
+  display: none;
+}
+
+.pass-olvidada {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 10px;
+  align-items: center;
+  color: blue;
+  font-family: var(--p-font-family);
+  font-size: 0.9rem;
+  transform: translateY(-15px);
+  cursor: pointer;
+}
+
+.saludar-usuario {
+  font-size: xx-large;
+  font-family: var(--nav-font-family);
+  color: #333;
   font-weight: 400;
 }
