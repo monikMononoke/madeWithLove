@@ -9,13 +9,13 @@ export const handlerMostrarProducto = () => {
   divImagen.forEach((producto) => {
     producto.addEventListener("click", () => {
       window.scrollTo(0, 760);
-      mostrarProducto(producto);
+      mostrarProducto(producto, divProductosDestacados, divContenedor);
       botonAniadir();
     });
   });
 };
 
-const mostrarProducto = (producto) => {
+export const mostrarProducto = (producto, contenedor, contenedorPrincipal) => {
   const divContenedorProducto = document.createElement("div");
   const idImagen = producto.getAttribute("data-id");
   const index = parseInt(idImagen);
@@ -33,8 +33,8 @@ const mostrarProducto = (producto) => {
     </div>
     `;
 
-  divContenedor.appendChild(divContenedorProducto);
-  divProductosDestacados.style.display = "none";
+  contenedorPrincipal.appendChild(divContenedorProducto);
+  contenedor.style.display = "none";
 
   ocultarProducto(divContenedorProducto);
 };

@@ -1121,3 +1121,14 @@ input[type="submit"] {
   color: #333;
   font-weight: 400;
 }
+
+/* ENLACE PRODUCTOS - PÁGINA PRODUCTOS*/
+.productos-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 26px;
+  padding: 4.5rem;
+}

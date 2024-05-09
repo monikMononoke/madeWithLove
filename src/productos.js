@@ -47,7 +47,7 @@ export const productos = [
   {
     id: 5,
     producto: "Cámara",
-    imagen: "./assets/images/camara.jpg",
+    imagen: "./assets/images/camera.jpg",
     descripcion: "Cámara de rodaje vintage",
     precio: 49.99,
     categoria: "3+",
@@ -84,7 +84,7 @@ export const productos = [
   {
     id: 9,
     producto: "Cafetera",
-    imagen: "./assets/images/coffemachine.jpg",
+    imagen: "./assets/images/coffeemachine.jpg",
     descripcion: "Cafetera con taza y cucharita",
     precio: 44.99,
     categoria: "3+",
@@ -148,7 +148,7 @@ export const productos = [
   {
     id: 16,
     producto: "Set jardinería",
-    imagen: "./assets/images/set-garden.jpg",
+    imagen: "./assets/images/garden.jpg",
     descripcion:
       "Si te gusta cuidar de las plantas de tu jardín este será tu set preferido",
     precio: 44.99,
@@ -158,7 +158,7 @@ export const productos = [
   {
     id: 17,
     producto: "Helicóptero",
-    imagen: "./assets/hellicopter.jpg",
+    imagen: "./assets/images/hellicopter.jpg",
     descripcion: "Pequeño helicóptero con ruedas",
     precio: 12.99,
     categoria: "1-3",
@@ -253,7 +253,7 @@ export const productos = [
   {
     id: 27,
     producto: "Puzzle Fresa",
-    imagen: "./assets/images/puzzle-strawberry",
+    imagen: "./assets/images/puzzle-strawberry.jpg",
     descripcion: "Un divertido puzzle en forma de fresa",
     precio: 13.99,
     categoria: "1-3",
@@ -376,7 +376,7 @@ export const productos = [
   {
     id: 40,
     producto: "Tren",
-    imagen: "./assets/images/train.png",
+    imagen: "./assets/images/train.jpg",
     descripcion: "Quien se monta al tren más rápido? Tu-tuuu!",
     precio: 26.99,
     categoria: "1-3",
@@ -394,7 +394,7 @@ export const productos = [
   {
     id: 42,
     producto: "Estación meteorológica",
-    imagen: "./assets/images/wather.jpg",
+    imagen: "./assets/images/weather.jpg",
     descripcion:
       "Sabes qué tiempo hace fuera? Si la respuesta es no, yo te ayudaré a aprender!",
     precio: 24.99,

@@ -12,6 +12,8 @@ export const divProductosDestacados = document.querySelector(
   ".productos__destacados"
 );
 
+export const paginaProductos = document.querySelector(".pagina-productos");
+
 export const cerrarVentanaProducto = document.querySelector(".product__icon");
 
 export const headerProductosDestacados =
