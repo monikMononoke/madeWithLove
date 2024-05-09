@@ -9,6 +9,4 @@ cargarCarrito();
 mostrarFormulario();
 handlerMostrarTodosLosProductos();
 
-document.addEventListener("DOMContentLoaded", () => {
-  handlerDesplegarMenu();
-});
+document.addEventListener("DOMContentLoaded", handlerDesplegarMenu);
