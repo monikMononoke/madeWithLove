@@ -45,16 +45,6 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 5,
-    producto: "Cámara",
-    imagen: "./assets/images/camera.jpg",
-    descripcion: "Cámara de rodaje vintage",
-    precio: 49.99,
-    categoria: "3+",
-    subcategoria: "sets",
-  },
-
-  {
     id: 6,
     producto: "Carusel",
     imagen: "./assets/images/carusel.png",
@@ -118,25 +108,6 @@ export const productos = [
     subcategoria: "animales",
   },
   {
-    id: 13,
-    producto: "Gansos",
-    imagen: "./assets/images/ducks.jpg",
-    descripcion: "Una pareja de gansos",
-    precio: 11.99,
-    categoria: "1-3",
-    subcategoria: "animales",
-  },
-  {
-    id: 14,
-    producto: "Puzzle formas",
-    imagen: "./assets/images/forms.jpg",
-    descripcion:
-      "Un puzzle para aprender las formas geometricas y desarrollar la lógica",
-    precio: 12.99,
-    categoria: "1-3",
-    subcategoria: "puzzles",
-  },
-  {
     id: 15,
     producto: "Zorros",
     imagen: "./assets/images/fox.jpg",
@@ -174,16 +145,6 @@ export const productos = [
     subcategoria: "animales",
   },
   {
-    id: 19,
-    producto: "Set helados",
-    imagen: "./assets/images/ice-creams.jpg",
-    descripcion:
-      "Set de conos de helado. Puedes hacer las combinaciones que más te gusten!",
-    precio: 13.99,
-    categoria: "3+",
-    subcategoria: "puzzles",
-  },
-  {
     id: 20,
     producto: "Todoterreno",
     imagen: "./assets/images/jeep.png",
@@ -194,41 +155,12 @@ export const productos = [
     subcategoria: "vehiculos",
   },
   {
-    id: 21,
-    producto: "Batidora",
-    imagen: "./assets/images/mixer.jpg",
-    descripcion:
-      "Vamos a aprender para qué sirve la batidora y como se utiliza",
-    precio: 22.99,
-    categoria: "3+",
-    subcategoria: "sets",
-  },
-  {
     id: 22,
     producto: "Tablas con los números",
     imagen: "./assets/images/numbers.jpg",
     descripcion: "Te gustaría aprender los números hasta 10?",
     precio: 17.99,
     categoria: "3+",
-    subcategoria: "puzzles",
-  },
-  {
-    id: 23,
-    producto: "Plancha",
-    imagen: "./assets/images/plancha.jpg",
-    descripcion: "Quieres ayudar a mamá a planchar la ropa?",
-    precio: 17.99,
-    categoria: "1-3",
-    subcategoria: "sets",
-  },
-  {
-    id: 24,
-    producto: "Puzzle con animales",
-    imagen: "./assets/images/puzzle-animals.jpg",
-    descripcion:
-      "Un divertido puzzle compuesto por piezas con formas de animales",
-    precio: 11.99,
-    categoria: "1-3",
     subcategoria: "puzzles",
   },
   {
@@ -255,15 +187,6 @@ export const productos = [
     producto: "Puzzle Fresa",
     imagen: "./assets/images/puzzle-strawberry.jpg",
     descripcion: "Un divertido puzzle en forma de fresa",
-    precio: 13.99,
-    categoria: "1-3",
-    subcategoria: "puzzles",
-  },
-  {
-    id: 28,
-    producto: "Puzzle Arcoiris",
-    imagen: "./assets/images/rainbow-puzzle.jpg",
-    descripcion: "Un colorido puzzle en forma de arcoiris",
     precio: 13.99,
     categoria: "1-3",
     subcategoria: "puzzles",
@@ -315,15 +238,6 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 34,
-    producto: "Set musical",
-    imagen: "./assets/images/set-music.jpg",
-    descripcion: "Quien quiere organizar el mejor concierto de la ciudad?",
-    precio: 35.99,
-    categoria: "1-3",
-    subcategoria: "sets",
-  },
-  {
     id: 35,
     producto: "Hora del té",
     imagen: "./assets/images/set-tea-time.png",
@@ -362,16 +276,6 @@ export const productos = [
     precio: 19.99,
     categoria: "3+",
     subcategoria: "vehiculos",
-  },
-  {
-    id: 39,
-    producto: "Tres en raya",
-    imagen: "./assets/images/tic-tac-toe.png",
-    descripcion:
-      "Para pasar un rato divertido y aprender a desarrollar la lógica. Un juego estupendo!",
-    precio: 14.99,
-    categoria: "3+",
-    subcategoria: "didacticos",
   },
   {
     id: 40,
