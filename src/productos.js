@@ -45,7 +45,7 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 6,
+    id: 5,
     producto: "Carusel",
     imagen: "./assets/images/carusel.png",
     descripcion: "Caja musical con tapadera en forma de carusel",
@@ -54,7 +54,7 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 7,
+    id: 6,
     producto: "Camaleón",
     imagen: "./assets/images/chameleon_baby.jpg",
     descripcion: "Camaleón de color verde con ruedas",
@@ -63,7 +63,7 @@ export const productos = [
     subcategoria: "animales",
   },
   {
-    id: 8,
+    id: 7,
     producto: "Relój",
     imagen: "./assets/images/clock.jpg",
     descripcion: "Es hora de aprender las horas del relój",
@@ -72,7 +72,7 @@ export const productos = [
     subcategoria: "didacticos",
   },
   {
-    id: 9,
+    id: 8,
     producto: "Cafetera",
     imagen: "./assets/images/coffeemachine.jpg",
     descripcion: "Cafetera con taza y cucharita",
@@ -81,7 +81,7 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 10,
+    id: 9,
     producto: "Vacas",
     imagen: "./assets/images/cows.jpg",
     descripcion: "Una familia feliz de vacas pastando",
@@ -90,7 +90,7 @@ export const productos = [
     subcategoria: "animales",
   },
   {
-    id: 11,
+    id: 10,
     producto: "Bloques con letras",
     imagen: "./assets/images/cubes-baby.jpg",
     descripcion: "Bloques d emadera con las letras del abecedario",
@@ -99,7 +99,7 @@ export const productos = [
     subcategoria: "puzzles",
   },
   {
-    id: 12,
+    id: 11,
     producto: "Ciervos",
     imagen: "./assets/images/deer.jpg",
     descripcion: "Mamá cierva con su bebé cervatillo",
@@ -108,7 +108,7 @@ export const productos = [
     subcategoria: "animales",
   },
   {
-    id: 15,
+    id: 12,
     producto: "Zorros",
     imagen: "./assets/images/fox.jpg",
     descripcion: "Una pareja de zorros disfrutando del sol",
@@ -117,7 +117,7 @@ export const productos = [
     subcategoria: "animales",
   },
   {
-    id: 16,
+    id: 13,
     producto: "Set jardinería",
     imagen: "./assets/images/garden.jpg",
     descripcion:
@@ -127,7 +127,7 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 17,
+    id: 14,
     producto: "Helicóptero",
     imagen: "./assets/images/hellicopter.jpg",
     descripcion: "Pequeño helicóptero con ruedas",
@@ -136,7 +136,7 @@ export const productos = [
     subcategoria: "vehiculos",
   },
   {
-    id: 18,
+    id: 15,
     producto: "Hipopótamo",
     imagen: "./assets/images/hippo.png",
     descripcion: "Un hipopótamo dandose un paseo",
@@ -145,7 +145,7 @@ export const productos = [
     subcategoria: "animales",
   },
   {
-    id: 20,
+    id: 16,
     producto: "Todoterreno",
     imagen: "./assets/images/jeep.png",
     descripcion:
@@ -155,7 +155,7 @@ export const productos = [
     subcategoria: "vehiculos",
   },
   {
-    id: 22,
+    id: 17,
     producto: "Tablas con los números",
     imagen: "./assets/images/numbers.jpg",
     descripcion: "Te gustaría aprender los números hasta 10?",
@@ -164,7 +164,7 @@ export const productos = [
     subcategoria: "puzzles",
   },
   {
-    id: 25,
+    id: 18,
     producto: "Puzzle circulos",
     imagen: "./assets/images/puzzle-circles.jpg",
     descripcion:
@@ -174,7 +174,7 @@ export const productos = [
     subcategoria: "puzzles",
   },
   {
-    id: 26,
+    id: 19,
     producto: "Puzzle Dino",
     imagen: "./assets/images/puzzle-dino-baby.jpg",
     descripcion: "Un divertido puzzle en forma de dinosaurio",
@@ -183,7 +183,7 @@ export const productos = [
     subcategoria: "puzzles",
   },
   {
-    id: 27,
+    id: 20,
     producto: "Puzzle Fresa",
     imagen: "./assets/images/puzzle-strawberry.jpg",
     descripcion: "Un divertido puzzle en forma de fresa",
@@ -192,7 +192,7 @@ export const productos = [
     subcategoria: "puzzles",
   },
   {
-    id: 29,
+    id: 21,
     producto: "Rinoceronte",
     imagen: "./assets/images/rhino-baby.jpg",
     descripcion: "Un bonito rinoceronte con ruedas",
@@ -201,7 +201,7 @@ export const productos = [
     subcategoria: "animales",
   },
   {
-    id: 30,
+    id: 22,
     producto: "Cohete",
     imagen: "./assets/images/rocket+human.jpg",
     descripcion: "Un cohete ultra rápido para explorar el espacio!",
@@ -210,7 +210,7 @@ export const productos = [
     subcategoria: "vehiculos",
   },
   {
-    id: 31,
+    id: 23,
     producto: "Safari",
     imagen: "./assets/images/set_safari.jpg",
     descripcion: "Te apetece un safari por la Sabana?",
@@ -219,7 +219,7 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 32,
+    id: 24,
     producto: "Set cocina",
     imagen: "./assets/images/set-kitchen.jpg",
     descripcion:
@@ -229,7 +229,7 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 33,
+    id: 25,
     producto: "Set matematicas",
     imagen: "./assets/images/set-math3.jpg",
     descripcion: "Te apetece aprender a sumar y restar con bolitas fluffy?",
@@ -238,7 +238,7 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 35,
+    id: 26,
     producto: "Hora del té",
     imagen: "./assets/images/set-tea-time.png",
     descripcion:
@@ -248,7 +248,7 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 36,
+    id: 27,
     producto: "Animales del bosque",
     imagen: "./assets/images/set-wood.jpg",
     descripcion:
@@ -258,7 +258,7 @@ export const productos = [
     subcategoria: "sets",
   },
   {
-    id: 37,
+    id: 28,
     producto: "Ovejitas",
     imagen: "./assets/images/sheeps.jpg",
     descripcion:
@@ -268,7 +268,7 @@ export const productos = [
     subcategoria: "animales",
   },
   {
-    id: 38,
+    id: 29,
     producto: "Taxi",
     imagen: "./assets/images/taxi.png",
     descripcion:
@@ -278,7 +278,7 @@ export const productos = [
     subcategoria: "vehiculos",
   },
   {
-    id: 40,
+    id: 30,
     producto: "Tren",
     imagen: "./assets/images/train.jpg",
     descripcion: "Quien se monta al tren más rápido? Tu-tuuu!",
@@ -287,7 +287,7 @@ export const productos = [
     subcategoria: "vehiculos",
   },
   {
-    id: 41,
+    id: 31,
     producto: "Extreterrestre",
     imagen: "./assets/images/ufo-alien.png",
     descripcion: "El extraterrestre más molón del Sistema Solar!",
@@ -296,7 +296,7 @@ export const productos = [
     subcategoria: "vehiculos",
   },
   {
-    id: 42,
+    id: 32,
     producto: "Estación meteorológica",
     imagen: "./assets/images/weather.jpg",
     descripcion:
@@ -306,7 +306,7 @@ export const productos = [
     subcategoria: "didacticos",
   },
   {
-    id: 43,
+    id: 33,
     producto: "Leñador",
     imagen: "./assets/images/woodcutter.jpg",
     descripcion:
@@ -316,7 +316,7 @@ export const productos = [
     subcategoria: "vehiculos",
   },
   {
-    id: 44,
+    id: 34,
     producto: "Puzzle abstracto",
     imagen: "./assets/images/wooden-rokcs.jpg",
     descripcion:
@@ -326,7 +326,7 @@ export const productos = [
     subcategoria: "puzzles",
   },
   {
-    id: 45,
+    id: 35,
     producto: "Palabras",
     imagen: "./assets/images/words.jpg",
     descripcion:
