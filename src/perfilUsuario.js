@@ -114,5 +114,6 @@ const saludarUsuario = (nombre) => {
     loginForm.innerHTML = "";
     loginForm.style.display = "none";
     main.style.display = "block";
+    window.scrollTo(0, 0);
   }, 2000);
 };
