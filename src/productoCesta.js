@@ -1,7 +1,7 @@
 import { productos } from "./productos.js";
-import { carritoVacio } from "./constantes.js";
+import { main, carritoVacio } from "./constantes.js";
 
-let carrito = [];
+export let carrito = [];
 
 export const botonAniadir = () => {
   const botonAniadir = document.querySelectorAll(".producto-active-aniadir");
@@ -15,7 +15,7 @@ export const botonAniadir = () => {
       carritoVacio.style.display = "block";
       setTimeout(() => {
         carritoVacio.style.display = "none";
-      }, 3000);
+      }, 1500);
     })
   );
 };
@@ -56,8 +56,8 @@ const mostrarCarrito = (carrito) => {
     <p class = "precio-producto">Precio: <strong>${item.precioTotal}€</strong></p>
     </div>
     </div>
+    
     `;
-
     listaCarrito.appendChild(li);
 
     const botonEliminar = document.createElement("button");
@@ -91,9 +91,8 @@ export const cargarCarrito = () => {
       carritoVacio.style.display = "block";
       setTimeout(() => {
         carritoVacio.style.display = "none";
-      }, 3000);
+      }, 2000);
     } else {
-      const main = document.querySelector("main");
       main.style.display = "none";
       mostrarCarrito(carrito);
       actualizaPrecioTotalCarrito();

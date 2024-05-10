@@ -874,7 +874,7 @@ h1 {
   }
 }
 
-/* PÁGINA CARRITO */
+/* ICONO CARRITO - PÁGINA CARRITO */
 .carrito-main {
   display: none;
   flex-direction: column;
@@ -1021,7 +1021,7 @@ h1 {
   font-weight: 400;
 }
 
-/*  PERFIL DE USUARIO */
+/*  ICONO USUARIO - FORMULARIO DE INICIO DE SESIÓN */
 .login {
   display: none;
   background-color: #a6d0ed;

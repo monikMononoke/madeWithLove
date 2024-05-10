@@ -1,10 +1,10 @@
 import { productos } from "./productos.js";
 import { paginaProductos, main } from "./constantes.js";
 import { mostrarProducto } from "./mostrarProducto.js";
-import { botonAniadir } from "./gestionCarrito.js";
+import { botonAniadir } from "./productoCesta.js";
 
 export const handlerMostrarTodosLosProductos = () => {
-  const enlaceProductos = document.querySelector(".enlace-productos");
+  const enlaceProductos = document.querySelector("#enlace-productos");
   enlaceProductos.addEventListener("click", () => {
     mostrarTodosLosProductos();
   });
