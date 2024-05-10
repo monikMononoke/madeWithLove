@@ -10,3 +10,7 @@
 ##### Link al diseño del sitio web :
 
 - https://www.figma.com/file/gg0UPDg7cPWash6kTYQAls/WoodenToys?type=design&node-id=0%3A1&mode=design&t=RlocpvbLehViRJrj-1
+
+##### Link a la colección de fotos
+
+- https://www.pinterest.es/monikstefanova/juguetes-artesanales/
