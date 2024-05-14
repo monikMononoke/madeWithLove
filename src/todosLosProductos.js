@@ -1,24 +1,30 @@
 import { productos } from "./productos.js";
-import { paginaProductos, main } from "./constantes.js";
+import {
+  contenedorTodosProductos,
+  main,
+  paginaTodosProductos,
+} from "./constantes.js";
 import { mostrarProducto } from "./mostrarProducto.js";
 import { botonAniadir } from "./productoCesta.js";
+
+export const productosMain = document.createElement("div");
+productosMain.classList.add("productos-main");
 
 export const handlerMostrarTodosLosProductos = () => {
   const enlaceProductos = document.querySelector("#enlace-productos");
   enlaceProductos.addEventListener("click", () => {
+    window.scrollTo(0, 0);
     mostrarTodosLosProductos();
   });
 };
 
 const mostrarTodosLosProductos = () => {
-  const productosMain = document.createElement("div");
-  productosMain.classList.add("productos-main");
-
-  if (!paginaProductos.hasChildNodes()) {
-    paginaProductos.appendChild(productosMain);
+  if (!contenedorTodosProductos.hasChildNodes()) {
+    contenedorTodosProductos.appendChild(productosMain);
     pintarProductos(productosMain);
     handlerMostrarCadaProducto(productosMain);
-    paginaProductos.style.display = "flex";
+    paginaTodosProductos.style.display = "flex";
+    contenedorTodosProductos.style.display = "flex";
     main.style.display = "none";
   }
 };
@@ -44,8 +50,8 @@ export const handlerMostrarCadaProducto = (contenedor) => {
   const divImagen = document.querySelectorAll(".productos__destacados-img");
   divImagen.forEach((producto) => {
     producto.addEventListener("click", () => {
-      window.scrollTo(0, 760);
-      mostrarProducto(producto, contenedor, paginaProductos);
+      window.scrollTo(0, 0);
+      mostrarProducto(producto, contenedor, contenedorTodosProductos);
       botonAniadir();
     });
   });

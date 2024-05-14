@@ -170,6 +170,15 @@ body {
     background-color: #4d5b46;
     box-shadow: 0px 0px 1px #2a432d;
   }
+
+  .nav__list-items-left > .nav__list-anchor > a:active {
+    background-color: #4d5b46;
+    box-shadow: 0px 0px 1px #2a432d;
+  }
+  .nav__list-items-right > .nav__list-anchor > a:active {
+    background-color: #4d5b46;
+    box-shadow: 0px 0px 1px #2a432d;
+  }
 }
 
 /* MENOS 1020px */
@@ -367,7 +376,7 @@ h1 {
 /* SECCIÓN PRODUCTOS DESTACADOS*/
 
 .productos__destacados-container {
-  padding: 4rem;
+  padding: 2rem;
   transition: all 1500ms linear;
   width: 100%;
   margin: 0 auto;
@@ -547,7 +556,7 @@ h1 {
 .producto-active-small {
   display: flex;
   width: 100%;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   background: #ffe8cf;
@@ -814,6 +823,8 @@ h1 {
     width: 100%;
     margin: 0 auto;
     border-radius: 0;
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 
   .producto-active-small > .producto-active-img {
@@ -871,6 +882,42 @@ h1 {
 
   .categorias-div p {
     font-size: 1.2rem;
+  }
+
+  #pagina-productos.todos-productos {
+    padding: 0;
+    margin: 0;
+    margin-top: 12px;
+    position: relative;
+  }
+
+  .pagina-productos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
+  .h2-todos-productos {
+    margin: 0;
+    padding: 0;
+  }
+
+  .pagina-productos .producto-active-small {
+    padding: 16px 0 16px 0;
+  }
+
+  .productos-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  footer {
+    position: relative;
   }
 }
 
@@ -1123,6 +1170,16 @@ input[type="submit"] {
 }
 
 /* ENLACE PRODUCTOS - PÁGINA PRODUCTOS*/
+.todos-productos {
+  display: none;
+  padding: 2rem;
+  margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+}
+
 .productos-main {
   display: flex;
   flex-direction: row;
@@ -1131,4 +1188,35 @@ input[type="submit"] {
   margin: 0 auto;
   gap: 26px;
   padding: 4.5rem;
+  position: relative;
+}
+
+.h2-todos-productos {
+  font-family: var(--nav-font-family);
+  font-size: large;
+  color: #333;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.todos-productos .productos__destacados-div {
+  background: #ffe8cb;
+}
+
+.volver-productos {
+  cursor: pointer;
+  display: none;
+  margin-right: 7%;
+  font-family: var(--hero-text);
+  font-size: 1.2rem;
+  margin-left: 7%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: #333;
 }

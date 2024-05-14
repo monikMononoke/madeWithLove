@@ -12,7 +12,16 @@ export const divProductosDestacados = document.querySelector(
   ".productos__destacados"
 );
 
-export const paginaProductos = document.querySelector(".pagina-productos");
+export const enlacePaginaProductos =
+  document.querySelector("#enlace-productos");
+export const paginaTodosProductos = document.querySelector(".todos-productos");
+
+export const contenedorTodosProductos =
+  document.querySelector(".pagina-productos");
+
+export const headerTodosProductos = document.querySelector(
+  ".h2-todos-productos"
+);
 
 export const cerrarVentanaProducto = document.querySelector(".product__icon");
 

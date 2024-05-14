@@ -40,7 +40,6 @@ const pintarFormulario = () => {
     </form>
     <div class="pass-olvidada">
     <p>¿Has olvidado tu contraseña?</p>
-    <p>¿No tienes cuenta? Registrate</p>
     </div>
     </div>
 
