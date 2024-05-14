@@ -120,10 +120,12 @@ const eliminarProductoDelCarrito = (id) => {
 };
 
 const recuperarCarrito = () => {
-  const carritoGuardado = localStorage.getItem("carrito");
-  const carritoRecuperado = JSON.parse(carritoGuardado);
+  if (localStorage.length !== 0) {
+    const carritoGuardado = localStorage.getItem("carrito");
+    const carritoRecuperado = JSON.parse(carritoGuardado);
 
-  carritoRecuperado.forEach((item) => {
-    carrito.push(item);
-  });
+    carritoRecuperado.forEach((item) => {
+      carrito.push(item);
+    });
+  }
 };
