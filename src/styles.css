@@ -293,7 +293,7 @@ main {
   flex: 0.25;
   left: 0px;
   width: 150px;
-  height: 75vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
   transition: 1s ease-in-out;
@@ -455,7 +455,6 @@ h1 {
   display: none;
   margin-right: 7%;
   font-family: monospace;
-  padding: 6px;
   font-size: 1.1rem;
   margin-left: 7%;
   margin-top: 12px;
@@ -467,6 +466,12 @@ h1 {
 .product__icon a {
   text-decoration: none;
   color: #333;
+  padding: 6px;
+}
+
+.product__icon a:hover {
+  background: #ffe8cf;
+  border-radius: 3px;
 }
 
 .producto-active {
@@ -573,6 +578,7 @@ h1 {
   flex-shrink: 2;
   width: 80%;
   max-width: 450px;
+  overflow: hidden;
 }
 
 .producto-active-small .producto-active-texto > h2 {
@@ -1082,7 +1088,7 @@ input[type="submit"] {
   border-radius: 3px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   /* HERO */
   .hero {
     display: flex;
@@ -1103,7 +1109,7 @@ input[type="submit"] {
     flex: 0.25;
     left: 0px;
     width: 100vw;
-    height: 65vh;
+    height: 70vh;
     position: relative;
     object-fit: cover;
     overflow: hidden;
@@ -1112,7 +1118,7 @@ input[type="submit"] {
   }
 
   .hero__image:hover {
-    flex: 2;
+    flex: 1;
   }
 
   .hero__image-img {
@@ -1141,7 +1147,7 @@ input[type="submit"] {
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    margin-top: 24px;
+    padding-top: 1rem;
   }
 
   .productos__destacados {
@@ -1179,15 +1185,16 @@ input[type="submit"] {
     border-radius: 0;
     flex-direction: column;
     justify-content: center;
-
     flex-wrap: wrap;
     padding-bottom: 2rem;
   }
 
   .producto-active-small > .producto-active-img {
-    width: 80%;
+    width: auto;
+    max-width: 80%;
     margin: 0 auto;
     border-radius: 2px;
+    overflow: hidden;
   }
 
   .producto-active-small > .producto-active-h2 {
