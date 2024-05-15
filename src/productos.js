@@ -140,7 +140,7 @@ export const productos = [
     producto: "Hipopótamo",
     imagen: "./assets/images/hippo.png",
     descripcion: "Un hipopótamo dandose un paseo",
-    precio: 17.99,
+    precio: 34.99,
     categoria: "1-3",
     subcategoria: "animales",
   },
