@@ -8,7 +8,7 @@ export const handlerMostrarProducto = () => {
   const divImagen = document.querySelectorAll(".productos__destacados-img");
   divImagen.forEach((producto) => {
     producto.addEventListener("click", () => {
-      window.scrollTo(0, 760);
+      window.scrollTo(250, 700);
       mostrarProducto(producto, divProductosDestacados, divContenedor);
       botonAniadir();
     });
@@ -20,8 +20,18 @@ export const mostrarProducto = (producto, contenedor, contenedorPrincipal) => {
   const idImagen = producto.getAttribute("data-id");
   const index = parseInt(idImagen);
 
-  detectarAnchoVentana(divContenedorProducto);
-  ventanaOnResize(divContenedorProducto);
+  detectarAnchoVentana(
+    divContenedorProducto,
+    "producto-active-small",
+    "producto-active",
+    1200
+  );
+  ventanaOnResize(
+    divContenedorProducto,
+    "producto-active-small",
+    "producto-active",
+    1200
+  );
   divContenedorProducto.innerHTML = `
     <img class="producto-active-img" src="${productos[index].imagen}"/>
     

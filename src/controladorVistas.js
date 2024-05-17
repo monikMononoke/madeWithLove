@@ -1,8 +1,4 @@
-import {
-  paginaTodosProductos,
-  loginForm,
-  enlacePaginaProductos,
-} from "./constantes.js";
+import { paginaTodosProductos, loginForm, main } from "./constantes.js";
 import { carrito } from "./productoCesta.js";
 
 const divCarrito = document.querySelector(".carrito-main");
@@ -19,7 +15,7 @@ export const mostrarVistaElegida = () => {
 
         case "#pagina-productos":
           mostrarVistaPaginaProductos();
-          enlacePaginaProductos.style.backgroundColor = "#4d5b46";
+          // enlacePaginaProductos.style.backgroundColor = "#4d5b46";
           break;
 
         case "#login":
@@ -37,6 +33,7 @@ const mostrarVistaCarrito = () => {
   if (divCarrito.style.display === "flex") {
     paginaTodosProductos.style.display = "none";
     loginForm.style.display = "none";
+    main.style.display = "none";
   }
 };
 
@@ -45,6 +42,7 @@ const mostrarVistaLogin = () => {
   if (loginForm.style.display === "flex") {
     divCarrito.style.display = "none";
     paginaTodosProductos.style.display = "none";
+    main.style.display = "none";
   }
 };
 
@@ -53,5 +51,6 @@ const mostrarVistaPaginaProductos = () => {
   if (paginaTodosProductos.style.display === "flex") {
     divCarrito.style.display = "none";
     loginForm.style.display = "none";
+    main.style.display = "none";
   }
 };

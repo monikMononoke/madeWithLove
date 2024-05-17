@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 /* VARIABLES */
 :root {
   --nav-color: #5b6952;
   --nav-font-family: "Century Gothic", sans-serif;
   --h1-font-family: "Chilanka", cursive;
+  --producto-active-h2: "Poppins", sans-serif;
   --nav-height: 7rem;
   --nav-line-height: 7rem;
   --p-font-size: 1.1rem;
@@ -35,6 +36,10 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
+button {
+  font-family: var(--nav-font-family);
+}
+
 /* FONTS */
 /* font de la nav*/
 .barrio-regular {
@@ -57,6 +62,15 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "slnt" 0;
+}
+
+/*font para los h2 de los detalles de los productos */
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 5px;
 }
 
 /* NAV - barra de navegación */
@@ -283,7 +297,25 @@ main {
   width: 100%;
   background: #f7ddbf;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1700px;
+}
+
+.hero__div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1700px;
+}
+.hero {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  background: #f7ddbf;
+  margin: 0 auto;
+  max-width: 1700px;
 }
 
 .hero__image {
@@ -294,6 +326,7 @@ main {
   left: 0px;
   width: 150px;
   height: 100%;
+  max-height: 600px;
   position: relative;
   overflow: hidden;
   transition: 1s ease-in-out;
@@ -347,11 +380,13 @@ main {
 /* H1 DE LA PÁGINA*/
 h1 {
   margin: 0 auto;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   color: #3e3c3c;
   text-align: center;
   max-width: 1400px;
   font-family: var(--h1-font-family);
+  font-weight: 400;
   z-index: 97;
   width: 100%;
 }
@@ -385,12 +420,14 @@ h1 {
 
 .productos-h2 {
   font-family: var(--nav-font-family);
-  font-size: large;
+  font-size: medium;
   color: #333;
   margin-top: 0;
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   justify-content: space-between;
   align-content: center;
 }
@@ -399,6 +436,7 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  justify-content: center;
   position: relative;
   justify-content: space-evenly;
   padding: 1rem 4.5rem 3rem 4.5rem;
@@ -454,9 +492,9 @@ h1 {
   cursor: pointer;
   display: none;
   margin-right: 7%;
-  font-family: monospace;
+  font-family: var(--nav-font-family);
   font-size: 1.1rem;
-  margin-left: 7%;
+  margin-left: 9%;
   margin-top: 12px;
   margin-bottom: 12px;
   text-decoration: none;
@@ -476,7 +514,7 @@ h1 {
 
 .producto-active {
   height: 600px;
-  max-width: 1100px;
+  max-width: 1000px;
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -500,8 +538,9 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 35%;
-  height: 85%;
+  width: 40%;
+  height: 75%;
+  max-height: 500px;
   justify-content: center;
 }
 
@@ -509,10 +548,10 @@ h1 {
   padding: 15px;
   background-color: #f0cdab;
   text-align: center;
-  font-family: monospace;
+  font-family: var(--producto-active-h2);
   font-size: x-large;
   letter-spacing: 1.4px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .producto-active-texto > button {
@@ -534,7 +573,7 @@ h1 {
 }
 
 .producto-active-aniadir {
-  margin-top: 95%;
+  margin-top: 85%;
   height: 40px;
   width: 250px;
   background-color: var(--nav-color);
@@ -568,6 +607,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: space-evenly;
   margin-top: 12px;
   height: 90vh;
   width: 35%;
@@ -598,7 +638,7 @@ h1 {
 
 .producto-active-small .producto-active-texto > .producto-active-precio {
   margin-top: 3%;
-  margin-right: 5px;
+  margin-right: 8px;
   font-size: 1.1rem;
   transform: translateX(1%);
   font-family: var(--p-font-family);
@@ -636,7 +676,7 @@ h1 {
 
 .categorias-h2 {
   font-family: var(--nav-font-family);
-  font-size: large;
+  font-size: medium;
   color: #333;
   margin-top: 0;
   max-width: 1300px;
@@ -730,7 +770,7 @@ h1 {
 
 .blog-h2 {
   font-family: var(--nav-font-family);
-  font-size: large;
+  font-size: medium;
   color: #333;
   margin-top: 0;
   max-width: 1300px;
@@ -894,9 +934,15 @@ h1 {
 }
 
 .cerrar-carrito {
-  font-family: var(--h1-font-family);
-  font-weight: 400;
   cursor: pointer;
+  margin-right: 7%;
+  font-family: var(--nav-font-family);
+  padding: 6px;
+  font-size: 1.1rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: #333;
 }
 
 .carrito-contenedor .carrito-h2 {
@@ -1054,9 +1100,9 @@ input[type="submit"] {
 
 .h2-todos-productos {
   font-family: var(--nav-font-family);
-  font-size: large;
+  font-size: medium;
   color: #333;
-  max-width: 1300px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1073,7 +1119,7 @@ input[type="submit"] {
   cursor: pointer;
   display: none;
   margin-right: 7%;
-  font-family: monospace;
+  font-family: var(--nav-font-family);
   padding: 6px;
   font-size: 1.1rem;
   margin-left: 7%;
@@ -1088,28 +1134,119 @@ input[type="submit"] {
   border-radius: 3px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 402px) {
+  .hero-small {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+    max-height: 500px;
+  }
+
+  .hero-small .hero__div {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 500%;
+    left: 0;
+    animation: 15s slidy infinite;
+    animation-timing-function: linear;
+  }
+
+  .hero__image {
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    float: left;
+  }
+
+  .hero__image-img img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+  }
+
+  @keyframes slidy {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
+
+  .middle {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -250%);
+    transform: translate(-50%, -250%);
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: medium;
+    padding-left: 1rem;
+  }
+
+  h1 {
+    font-size: large;
+    padding-top: 1rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
   /* HERO */
   .hero {
+    display: block;
+    overflow: hidden;
+    width: 100vw;
+    max-width: 900px;
+    background: #f7ddbf;
+    margin: 0 auto;
+  }
+  .hero__div {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    width: 100vw;
-    max-width: 800px;
-    background: #f7ddbf;
-    margin: 0 auto;
   }
 
   .hero__image {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-shrink: 2;
     flex: 0.25;
     left: 0px;
-    width: 100vw;
-    height: 70vh;
+    width: 400px;
     position: relative;
     object-fit: cover;
     overflow: hidden;
@@ -1123,6 +1260,7 @@ input[type="submit"] {
 
   .hero__image-img {
     width: 400px;
+    height: auto;
   }
 
   .hero__image-img:hover {

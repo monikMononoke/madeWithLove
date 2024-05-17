@@ -1,21 +1,31 @@
-export const detectarAnchoVentana = (contenedor) => {
+export const detectarAnchoVentana = (
+  contenedor,
+  claseSmall,
+  claseLarge,
+  anchoLimite
+) => {
   const anchoVentana = window.innerWidth;
-  const anchoLimite = 1200;
-  if (anchoVentana < anchoLimite) {
-    contenedor.className = "producto-active-small";
+  const anchoLimiteVentana = anchoLimite;
+  if (anchoVentana < anchoLimiteVentana) {
+    contenedor.className = claseSmall;
   } else {
-    contenedor.className = "producto-active";
+    contenedor.className = claseLarge;
   }
 };
 
-export const ventanaOnResize = (contenedor) => {
+export const ventanaOnResize = (
+  contenedor,
+  claseSmall,
+  claseLarge,
+  anchoLimite
+) => {
   window.addEventListener("resize", () => {
     const anchoVentana = window.innerWidth;
-    const anchoLimite = 1200;
-    if (anchoVentana < anchoLimite) {
-      contenedor.className = "producto-active-small";
+    const anchoLimiteVentana = anchoLimite;
+    if (anchoVentana < anchoLimiteVentana) {
+      contenedor.className = claseSmall;
     } else {
-      contenedor.className = "producto-active";
+      contenedor.className = claseLarge;
     }
   });
 };
