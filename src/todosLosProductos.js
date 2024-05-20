@@ -4,7 +4,7 @@ import {
   main,
   paginaTodosProductos,
 } from "./constantes.js";
-import { mostrarProducto } from "./mostrarProducto.js";
+import { mostrarProducto, seccionesDesplegables } from "./mostrarProducto.js";
 import { botonAniadir } from "./productoCesta.js";
 
 export const productosMain = document.createElement("div");
@@ -53,6 +53,7 @@ export const handlerMostrarCadaProducto = (contenedor) => {
       window.scrollTo(0, 0);
       mostrarProducto(producto, contenedor, contenedorTodosProductos);
       botonAniadir();
+      seccionesDesplegables();
     });
   });
 };

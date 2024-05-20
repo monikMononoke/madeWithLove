@@ -4,7 +4,7 @@ import { cargarCarrito } from "./productoCesta.js";
 import { mostrarFormulario } from "./perfilUsuario.js";
 import { handlerMostrarTodosLosProductos } from "./todosLosProductos.js";
 import { mostrarVistaElegida } from "./controladorVistas.js";
-import { handlerCarrusel } from "./carruselFotosHero.js";
+import { handlerCarrusel } from "./carruselHeroMobile.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   handlerCarrusel();
