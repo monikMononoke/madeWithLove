@@ -1243,6 +1243,9 @@ input[type="submit"] {
     margin: 0 auto;
     border-radius: 2px;
     overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
   }
 
   .producto-active-small > .producto-active-h2 {
