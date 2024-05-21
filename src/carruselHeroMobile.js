@@ -1,10 +1,8 @@
 import { detectarAnchoVentana, ventanaOnResize } from "./anchoDeVentana.js";
 
-export const handlerCarrusel = () => {
+export const handlerCarruselMovil = () => {
   const divPrincipalHero = document.querySelector(".hero");
   const contenedorSlides = document.querySelector(".hero__div");
-
-  const slides = document.querySelectorAll(".hero__image");
 
   ventanaOnResize(divPrincipalHero, "hero-small", "hero", 402);
   detectarAnchoVentana(divPrincipalHero, "hero-small", "hero", 402);

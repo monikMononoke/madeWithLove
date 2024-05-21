@@ -43,22 +43,21 @@ export const mostrarProducto = (producto, contenedor, contenedorPrincipal) => {
     <div class="producto-active-descripcion">
     <p class="producto-active-p">${productos[index].descripcion}</p> 
     <p class="producto-active-precio">Precio: ${productos[index].precio}€</p>
-    <p class="producto-active-edad">Edad recomendada: ${productos[index].edad}<p>
-
+   
     <div class="desplegable">
-      <button class="acordeon">Sección 1</button>
+      <button class="acordeon">Edad recomendada: </button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <p> ${productos[index].edad}</p>
         </div>
 
-        <button class="acordeon">Sección 2</button>
+        <button class="acordeon">Dimensiones: </button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <p>${productos[index].dimensiones}</p>
         </div>
 
-        <button class="acordeon">Sección 3</button>
+        <button class="acordeon">Beneficios: </button>
         <div class="panel">
-          <p>Lorem ipsum...</p>
+          <p>${productos[index].beneficios}</p>
         </div>
     </div>
  

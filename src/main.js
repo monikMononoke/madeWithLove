@@ -4,10 +4,10 @@ import { cargarCarrito } from "./productoCesta.js";
 import { mostrarFormulario } from "./perfilUsuario.js";
 import { handlerMostrarTodosLosProductos } from "./todosLosProductos.js";
 import { mostrarVistaElegida } from "./controladorVistas.js";
-import { handlerCarrusel } from "./carruselHeroMobile.js";
+import { handlerCarruselMovil } from "./carruselHeroMobile.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  handlerCarrusel();
+  handlerCarruselMovil();
   handlerDesplegarMenu();
   mostrarVistaElegida();
 });

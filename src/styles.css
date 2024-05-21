@@ -507,15 +507,14 @@ h1 {
 }
 
 .producto-active {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2%;
   height: 600px;
   max-width: 1000px;
   width: 80%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   background: #ffe8cf;
   border-radius: 15px;
   margin: 0 auto;
@@ -534,10 +533,9 @@ h1 {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  align-content: center;
+  gap: 5%;
   width: 50%;
-  height: 100%;
-  max-height: 580px;
+  height: 580px;
 }
 
 .producto-active-texto > h2 {
@@ -553,16 +551,15 @@ h1 {
 .producto-active-descripcion {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  height: 50%;
+  font-family: var(--nav-font-family);
+  gap: 15%;
   width: 90%;
-  margin: 2rem;
 }
 
 .producto-active-texto p {
   padding: 1rem;
-  font-family: var(--p-font-family);
   font-size: 1.1rem;
 }
 
@@ -586,10 +583,11 @@ h1 {
   border: solid transparent;
   text-transform: uppercase;
   color: white;
-  font-family: var(--nav-font-family);
   font-weight: 600;
+  letter-spacing: 0.7px;
   font-size: 1rem;
   line-height: 35px;
+  margin-top: 3rem;
 }
 
 .desplegable {
@@ -600,7 +598,7 @@ h1 {
 .acordeon {
   background-color: #ffe8cf;
   width: 100%;
-  color: #444;
+  color: #333;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -613,6 +611,19 @@ h1 {
 .active,
 .acordeon:hover {
   background-color: #f0cdab;
+}
+
+.acordeon::after {
+  content: "\02795";
+  color: #333;
+  font-size: 10px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\2796";
+  color: #333;
 }
 
 .panel {
@@ -1255,6 +1266,10 @@ input[type="submit"] {
     width: 100%;
     height: 100%;
     font-size: 1.1rem;
+  }
+
+  .producto-active-aniadir {
+    bottom: 1rem;
   }
 
   .categorias-container {
