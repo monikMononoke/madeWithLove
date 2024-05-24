@@ -1,3 +1,5 @@
+### EL proyecto está desarrollado en Visual Studio Code con Vite y Vanilla Javascript
+
 ### Requisitos:
 
 - Tener instalado Node.js
