@@ -15,7 +15,6 @@ export const mostrarVistaElegida = () => {
 
         case "#pagina-productos":
           mostrarVistaPaginaProductos();
-          // enlacePaginaProductos.style.backgroundColor = "#4d5b46";
           break;
 
         case "#login":

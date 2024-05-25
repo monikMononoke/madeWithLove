@@ -1,5 +1,8 @@
 import { productos } from "./productos.js";
-import { divContenedor, divProductosDestacados } from "./constantes.js";
+import {
+  divContenedorProductos,
+  divProductosDestacados,
+} from "./constantes.js";
 import { ocultarProducto } from "./ocultarProducto.js";
 import { detectarAnchoVentana, ventanaOnResize } from "./anchoDeVentana.js";
 import { botonAniadir } from "./productoCesta.js";
@@ -9,7 +12,7 @@ export const handlerMostrarProductoDestacado = () => {
   divImagen.forEach((producto) => {
     producto.addEventListener("click", () => {
       window.scrollTo(250, 700);
-      mostrarProducto(producto, divProductosDestacados, divContenedor);
+      mostrarProducto(producto, divProductosDestacados, divContenedorProductos);
       seccionesDesplegables();
       botonAniadir();
     });

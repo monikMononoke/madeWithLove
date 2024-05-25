@@ -3,6 +3,8 @@ import {
   cerrarVentanaProducto,
   headerProductosDestacados,
   headerTodosProductos,
+  divCategorias,
+  headerCategorias,
 } from "./constantes.js";
 import { productosMain } from "./todosLosProductos.js";
 
@@ -74,9 +76,7 @@ const handlerCategoriasProductos = (divProducto) => {
 };
 
 const handlerVolverCategorias = () => {
-  const headerCategorias = document.querySelector(".cat-h2");
   const volverCategorias = document.querySelector(".volver-categorias");
-  const divCategorias = document.querySelector(".categorias");
 
   const divProductosCategoria = document.querySelector(".productos-categoria");
 
