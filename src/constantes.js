@@ -1,3 +1,6 @@
+/* Todos los enlaces del menú de navegación */
+export const enlaces = document.querySelectorAll("a");
+
 /* menu__icon -> icono del menú responsive */
 export const menuIcon = document.querySelector(".menu__icon");
 
@@ -38,7 +41,8 @@ export const cerrarVentanaProducto = document.querySelector(".product__icon");
 export const headerProductosDestacados =
   document.querySelector(".productos-h2");
 
-/*  h3 carrito vacío */
+/* carrito */
+export const divCarrito = document.querySelector(".carrito-main");
 export const carritoVacio = document.querySelector(".carrito-vacio");
 
 /* etiqueta donde se renderiza el formulario de login */

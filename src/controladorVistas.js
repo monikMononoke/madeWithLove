@@ -1,8 +1,11 @@
-import { paginaTodosProductos, loginForm, main } from "./constantes.js";
+import {
+  enlaces,
+  paginaTodosProductos,
+  loginForm,
+  main,
+  divCarrito,
+} from "./constantes.js";
 import { carrito } from "./productoCesta.js";
-
-const divCarrito = document.querySelector(".carrito-main");
-const enlaces = document.querySelectorAll("a");
 
 export const mostrarVistaElegida = () => {
   enlaces.forEach((enlace) => {
