@@ -14,6 +14,7 @@ export const divProductosDestacados = document.querySelector(
 
 export const enlacePaginaProductos =
   document.querySelector("#enlace-productos");
+
 export const paginaTodosProductos = document.querySelector(".todos-productos");
 
 export const contenedorTodosProductos =

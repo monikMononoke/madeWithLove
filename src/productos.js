@@ -290,10 +290,10 @@ export const productos = [
     descripcion:
       "Un bonito rinoceronte con ruedas. Su tamaño es ideal para que los niños pequeños puedan jugar con él. <br> Llevatelo a todas partes, tanto en la guarde, como en paseo familiar o en la playa.",
     precio: 37.99,
-    edad: "Para niños de 1 a 3 años",
+    edad: "Para niños de 0 a 1 año",
     dimensiones: "26 x 11 cm",
     beneficios: "Ayuda a desarrollar habilidades motoras.",
-    categoria: "1-3",
+    categoria: "0-1",
     subcategoria: "animales",
   },
   {

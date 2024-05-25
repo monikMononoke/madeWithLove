@@ -4,7 +4,7 @@ import { ocultarProducto } from "./ocultarProducto.js";
 import { detectarAnchoVentana, ventanaOnResize } from "./anchoDeVentana.js";
 import { botonAniadir } from "./productoCesta.js";
 
-export const handlerMostrarProducto = () => {
+export const handlerMostrarProductoDestacado = () => {
   const divImagen = document.querySelectorAll(".productos__destacados-img");
   divImagen.forEach((producto) => {
     producto.addEventListener("click", () => {
@@ -16,6 +16,7 @@ export const handlerMostrarProducto = () => {
   });
 };
 
+// función que se utiliza para mostrar los detalles de los productos destacados, de página productos y de categorías
 export const mostrarProducto = (producto, contenedor, contenedorPrincipal) => {
   const divContenedorProducto = document.createElement("div");
   const idImagen = producto.getAttribute("data-id");
