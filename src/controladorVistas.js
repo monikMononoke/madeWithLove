@@ -1,11 +1,13 @@
 import {
-  enlaces,
   paginaTodosProductos,
   loginForm,
   main,
-  divCarrito,
+  paginaSubcategorias,
 } from "./constantes.js";
 import { carrito } from "./productoCesta.js";
+
+const divCarrito = document.querySelector(".carrito-main");
+const enlaces = document.querySelectorAll("a");
 
 export const mostrarVistaElegida = () => {
   enlaces.forEach((enlace) => {
@@ -23,6 +25,10 @@ export const mostrarVistaElegida = () => {
         case "#login":
           mostrarVistaLogin();
           break;
+
+        case "#subcategorias":
+          mostrarVistaSubcategorias();
+          break;
       }
     });
   });
@@ -33,6 +39,7 @@ const mostrarVistaCarrito = () => {
     divCarrito.style.display = "flex";
   }
   if (divCarrito.style.display === "flex") {
+    paginaSubcategorias.style.display = "none";
     paginaTodosProductos.style.display = "none";
     loginForm.style.display = "none";
     main.style.display = "none";
@@ -42,6 +49,7 @@ const mostrarVistaCarrito = () => {
 const mostrarVistaLogin = () => {
   loginForm.style.display = "flex";
   if (loginForm.style.display === "flex") {
+    paginaSubcategorias.style.display = "none";
     divCarrito.style.display = "none";
     paginaTodosProductos.style.display = "none";
     main.style.display = "none";
@@ -51,8 +59,19 @@ const mostrarVistaLogin = () => {
 const mostrarVistaPaginaProductos = () => {
   paginaTodosProductos.style.display = "flex";
   if (paginaTodosProductos.style.display === "flex") {
+    paginaSubcategorias.style.display = "none";
     divCarrito.style.display = "none";
     loginForm.style.display = "none";
     main.style.display = "none";
+  }
+};
+
+const mostrarVistaSubcategorias = () => {
+  paginaSubcategorias.style.display = "flex";
+  if (paginaSubcategorias.style.display === "flex") {
+    divCarrito.style.display = "none";
+    loginForm.style.display = "none";
+    main.style.display = "none";
+    paginaTodosProductos.style.display = "none";
   }
 };

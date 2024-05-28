@@ -1,6 +1,7 @@
 import { productos } from "./productos.js";
 import { mostrarProducto, seccionesDesplegables } from "./mostrarProducto.js";
 import { botonAniadir } from "./productoCesta.js";
+import { handlerVolverCategorias } from "./ocultarProducto.js";
 
 const seccionCategorias = document.querySelector(".categorias-container");
 const divCategorias = document.querySelector(".categorias");
@@ -56,6 +57,7 @@ const mostrarProductosCatUno = () => {
     productos.forEach((producto) => {
       if (producto.categoria === "0-1") {
         pintarProductos(producto);
+        handlerVolverCategorias();
       }
     });
     detallesProductoPorCategoria();
@@ -69,11 +71,13 @@ const mostrarProductosCatDos = () => {
     productos.forEach((producto) => {
       if (producto.categoria === "1-3") {
         pintarProductos(producto);
+        handlerVolverCategorias();
       }
     });
     detallesProductoPorCategoria();
   });
 };
+
 const mostrarProductosCatTres = () => {
   imagenCatTres.addEventListener("click", () => {
     mostrarEnlaceVolverCategorias();
@@ -81,6 +85,7 @@ const mostrarProductosCatTres = () => {
     productos.forEach((producto) => {
       if (producto.categoria === "3+") {
         pintarProductos(producto);
+        handlerVolverCategorias();
       }
     });
     detallesProductoPorCategoria();

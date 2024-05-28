@@ -3,10 +3,11 @@ import {
   cerrarVentanaProducto,
   headerProductosDestacados,
   headerTodosProductos,
-  divCategorias,
-  headerCategorias,
+  main,
 } from "./constantes.js";
 import { productosMain } from "./todosLosProductos.js";
+
+const cetegoriasHeader = document.querySelector(".categorias-h2");
 
 export const ocultarProducto = (divProducto) => {
   const elementoPadre = divProducto.parentElement;
@@ -38,9 +39,17 @@ export const ocultarProducto = (divProducto) => {
       break;
 
     case "categorias-container":
+      ocultarHeader(cetegoriasHeader);
       handlerVolverCategorias();
-      handlerCategoriasProductos(divProducto);
+      handlerVolverProductosCategoria(divProducto);
+      mostrarHeader(cetegoriasHeader);
       break;
+
+    case "pagina-subcategorias":
+      ocultarHeader(cetegoriasHeader);
+      handlerVolverProductosCategoria(divProducto);
+      volverAInicioDesdeSubcategorias();
+      mostrarHeader(cetegoriasHeader);
   }
 };
 
@@ -53,7 +62,7 @@ const mostrarHeader = (header) => {
   titulo.style.display = "block";
 };
 
-const handlerCategoriasProductos = (divProducto) => {
+const handlerVolverProductosCategoria = (divProducto) => {
   const volverProductosCategoria = document.querySelector(
     ".volver-productos-categoria"
   );
@@ -75,8 +84,10 @@ const handlerCategoriasProductos = (divProducto) => {
   }
 };
 
-const handlerVolverCategorias = () => {
+export const handlerVolverCategorias = () => {
+  const headerCategorias = document.querySelector(".cat-h2");
   const volverCategorias = document.querySelector(".volver-categorias");
+  const divCategorias = document.querySelector(".categorias");
 
   const divProductosCategoria = document.querySelector(".productos-categoria");
 
@@ -87,6 +98,22 @@ const handlerVolverCategorias = () => {
       divProductosCategoria.innerHTML = "";
       divCategorias.style.display = "flex";
       volverCategorias.style.display = "none";
+    });
+  }
+};
+
+export const volverAInicioDesdeSubcategorias = () => {
+  const headerCategorias = document.querySelector(".cat-h2");
+  const volverCategorias = document.querySelector(".volver-categorias");
+  const divCategorias = document.querySelector(".pagina-subcategorias");
+
+  if (volverCategorias.style.display === "block") {
+    volverCategorias.addEventListener("click", () => {
+      headerCategorias.innerHTML = "";
+      divCategorias.style.display = "none";
+      divCategorias.innerHTML = "";
+      volverCategorias.style.display = "none";
+      main.style.display = "flex";
     });
   }
 };
