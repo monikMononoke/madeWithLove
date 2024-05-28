@@ -2,7 +2,7 @@ export const productos = [
   {
     id: 0,
     producto: "Bloques con números",
-    imagen: "./assets/images/blocks-dog.png",
+    imagen: "/images/blocks-dog.png",
     descripcion:
       "Bloques con los números del uno al seis. Si consigues ordenar los números en el orden correcto verás el dibujo de un perrito Teckel. <br> Shhh... las pistas están escondidas en el color de fondo de los números.",
     precio: 71.99,
@@ -16,7 +16,7 @@ export const productos = [
   {
     id: 1,
     producto: "Conejitos",
-    imagen: "./assets/images/bunnies.jpg",
+    imagen: "/images/bunnies.jpg",
     descripcion:
       "Dos conejitos de madera. Estos preciosos conejitos tienen ganas de hacer nuevos amigos! <br> Cada uno esta hecho de una pieza, así que preparate para que te acompañen durante años!",
     precio: 52.99,
@@ -30,7 +30,7 @@ export const productos = [
   {
     id: 2,
     producto: "Conejito",
-    imagen: "./assets/images/bunny-toddler.jpg",
+    imagen: "/images/bunny-toddler.jpg",
     descripcion:
       "Conejito con carrito. Este conejito tiene ganas de dar largos paseos por el suelo de tu casa o en el parque. <br> Puedes llevarte a donde tu quieras! <br> A lo mejor nos puede ayudar a aprender las direcciones... vamos a la izquierda, derecha, para delante o para atrás?",
     precio: 59.99,
@@ -43,7 +43,7 @@ export const productos = [
   {
     id: 3,
     producto: "Calendario",
-    imagen: "./assets/images/calendar.png",
+    imagen: "/images/calendar.png",
     descripcion:
       "Es hora de aprender las fechas! Sabrás decir cuando es tu cumpleaños, cuanto tiempo queda para que empiezo el verano, o cuanto queda hasta Navidad! <br> El diseño de sus piezas capta la atención enseguida! Quien no tendría ganas de aprender las fechas con este divertido calendario!",
     precio: 56.99,
@@ -56,7 +56,7 @@ export const productos = [
   {
     id: 4,
     producto: "Cámara de fotos",
-    imagen: "./assets/images/camara.jpg",
+    imagen: "/images/camara.jpg",
     descripcion:
       "Este juguete está pensado para potenciar la creatividad y desarrollar la habilidad de observación. <br> Los niños podrán disfutar del juguete en casa o al aire libre, observando a través del lente el entorno que les rodea y la belleza de la naturaleza. <br> La observación hace que los niños aprendan a estar atentos de las cosas que suceden a su alrededor y ayuda a desarrollar otras habilidades cognitivas.",
     edad: "Para niños mayores de dos años",
@@ -71,7 +71,7 @@ export const productos = [
   {
     id: 5,
     producto: "Carrusel",
-    imagen: "./assets/images/carrusel.png",
+    imagen: "/images/carrusel.png",
     descripcion:
       "Caja musical con tapadera en forma de carrusel. Este producto no es un juguete, sino que está creado para ser usado como decoración. <br> El diseño está inspirado en el tiovivo de las ferias y la música ayudará a los niños a relajarse.",
     precio: 91.99,
@@ -84,7 +84,7 @@ export const productos = [
   {
     id: 6,
     producto: "Camaleón",
-    imagen: "./assets/images/chameleon_baby.jpg",
+    imagen: "/images/chameleon_baby.jpg",
     descripcion:
       "Camaleón de color verde con ruedas. Este precioso juguete está pensado para que tu niño empiece a desarrollar sus habilidades motoras. Es hora de empezar a gatear!",
     precio: 54.99,
@@ -98,7 +98,7 @@ export const productos = [
   {
     id: 7,
     producto: "Relój",
-    imagen: "./assets/images/clock.jpg",
+    imagen: "/images/clock.jpg",
     descripcion:
       "Es hora de aprender las horas del relój! Este reloj con forma de león enseña número y horas. Los números son extraíbles y se puede intentar volver a ponerlos en su sitio, a modo de puzzle. Qué divertido!",
     precio: 45.99,
@@ -111,7 +111,7 @@ export const productos = [
   {
     id: 8,
     producto: "Cafetera",
-    imagen: "./assets/images/coffeemachine.jpg",
+    imagen: "/images/coffeemachine.jpg",
     descripcion:
       "Cafetera con taza y cucharita. Este juguete ayuda a los niños a acercarse al mundo de los mayores. Sabemos que los niños se fijan en todo y aprenden de nosotros. <br> A través de los juguetes que recuerdan a objetos cotidianos del mundo de los mayores, los niños desarrollan su imaginación y la proyección del futuro.",
     precio: 79.99,
@@ -124,7 +124,7 @@ export const productos = [
   {
     id: 9,
     producto: "Vacas",
-    imagen: "./assets/images/cows.jpg",
+    imagen: "/images/cows.jpg",
     descripcion:
       "Una familia feliz de vacas pastando. A través del juego y la observación empezamos a enseñar al niño a reconocer los animales. <br> A través del juego con este juguete, podemos empezar a enseñar al niño el valor de la familia y la belleza de la naturaleza!",
     precio: 32.99,
@@ -138,7 +138,7 @@ export const productos = [
   {
     id: 10,
     producto: "Bloques con letras",
-    imagen: "./assets/images/cubes-baby.jpg",
+    imagen: "/images/cubes-baby.jpg",
     descripcion:
       "Bloques de madera con las letras del abecedario. El primer contacto del niño con el abecedario.  Con este juego el niño se acercará por primera vez a las letras y su uso! Este duradero juguete podría ser su acompañante durante el viaje de aprender las letras y después, usarlas para componer palabras! ",
     precio: 32.99,
@@ -151,7 +151,7 @@ export const productos = [
   {
     id: 11,
     producto: "Ciervos",
-    imagen: "./assets/images/deer.jpg",
+    imagen: "/images/deer.jpg",
     descripcion:
       "Mamá cierva con su bebé cervatillo. Sabes qué aspecto tienen los ciervos? Donde viven? Con qué se alimentan? <br> Os los podeis llevar a un paseo por el bosque, a lo mejor teneis suerte y los podeis observar una familia de ciervos de vardad! ",
     precio: 34.99,
@@ -165,7 +165,7 @@ export const productos = [
   {
     id: 12,
     producto: "Zorros",
-    imagen: "./assets/images/fox.jpg",
+    imagen: "/images/fox.jpg",
     descripcion:
       "Una parejita de zorros. Sabes donde puedes encontrar estos animales? Qué ruido hacen? Son unos animales con mucha energía por la noche y por el día les gusta el descanso. Te gustaría conocerlos?",
     precio: 37.99,
@@ -179,7 +179,7 @@ export const productos = [
   {
     id: 13,
     producto: "Set jardinería",
-    imagen: "./assets/images/garden.jpg",
+    imagen: "/images/garden.jpg",
     descripcion:
       "Te gustaría tener tu propio huerto? O tu jardín de flores? <br> Con este set aprendemos a cuidar de las frutas y las verduras, para que crezcan sanas y bonitas y nos puedan aportar muchas vitaminas! <br> También podemos cuidar de nuestro jardín de flores y cuando sean grandes y bonitas, la pondremos en un jarrón para que todos las vean!",
     precio: 78.99,
@@ -193,7 +193,7 @@ export const productos = [
   {
     id: 14,
     producto: "Helicóptero",
-    imagen: "./assets/images/hellicopter.jpg",
+    imagen: "/images/hellicopter.jpg",
     descripcion:
       "Los niños se lo pasarán en grande con este pequeño helicoptero! ",
     precio: 34.99,
@@ -207,7 +207,7 @@ export const productos = [
   {
     id: 15,
     producto: "Hipopótamo",
-    imagen: "./assets/images/hippo.png",
+    imagen: "/images/hippo.png",
     descripcion:
       "Un precioso hipopótamo con un diseño especial. <br> Como en todos nuestros juguetes, la pintura es natural y no toxica. <br> Conoces su habitat? Con qué se alimenta? Qué ruidos hace? Lo podrías aprender junto a tu nuevo amigo el hipopótamo.",
     precio: 53.99,
@@ -221,7 +221,7 @@ export const productos = [
   {
     id: 16,
     producto: "Todoterreno",
-    imagen: "./assets/images/jeep.png",
+    imagen: "/images/jeep.png",
     descripcion:
       "Un todoterreno que consigue atravesar los terrenos más difíciles! Te lo puedes llevar a donde quieras y te acompañará en tus aventuras allá donde vayas.",
     precio: 45.99,
@@ -234,7 +234,7 @@ export const productos = [
   {
     id: 17,
     producto: "Tablas con los números",
-    imagen: "./assets/images/numbers.jpg",
+    imagen: "/images/numbers.jpg",
     descripcion:
       "Te gustaría aprender los números hasta 10? Con este divertido puzzle aprendarás a sumar y restar con los números hasta 10 en un abrir y cerrar de ojos!",
     precio: 35.99,
@@ -247,7 +247,7 @@ export const productos = [
   {
     id: 18,
     producto: "Puzzle circulos",
-    imagen: "./assets/images/puzzle-circles.jpg",
+    imagen: "/images/puzzle-circles.jpg",
     descripcion:
       "Un puzzle en forma de torre compuesto de circulos. <br> No hay un orden correcto! Puedes apilarlos de la manera que te guste. Los puedes ordenar por colores o por tamaños. Tú eliges!",
     precio: 38.99,
@@ -260,7 +260,7 @@ export const productos = [
   {
     id: 19,
     producto: "Puzzle Dino",
-    imagen: "./assets/images/puzzle-dino-baby.jpg",
+    imagen: "/images/puzzle-dino-baby.jpg",
     descripcion:
       "Un divertido puzzle en forma de dinosaurio. Este puzzle tiene una diseño muy original. <br> Hecho con piezas grandes para que los niños pequeños puedan juegar con él.",
     precio: 45.99,
@@ -273,7 +273,7 @@ export const productos = [
   {
     id: 20,
     producto: "Puzzle Fresa",
-    imagen: "./assets/images/puzzle-strawberry.jpg",
+    imagen: "/images/puzzle-strawberry.jpg",
     descripcion:
       "Un divertido puzzle en forma de fresa. Este puzzle es muy eneficioso para el desarrollo de la lógica, la memoria y la creatividad del niño.",
     precio: 35.99,
@@ -286,7 +286,7 @@ export const productos = [
   {
     id: 21,
     producto: "Rinoceronte",
-    imagen: "./assets/images/rhino-baby.jpg",
+    imagen: "/images/rhino-baby.jpg",
     descripcion:
       "Un bonito rinoceronte con ruedas. Su tamaño es ideal para que los niños pequeños puedan jugar con él. <br> Llevatelo a todas partes, tanto en la guarde, como en paseo familiar o en la playa.",
     precio: 37.99,
@@ -299,7 +299,7 @@ export const productos = [
   {
     id: 22,
     producto: "Cohete",
-    imagen: "./assets/images/rocket+human.jpg",
+    imagen: "/images/rocket+human.jpg",
     descripcion:
       "Un cohete ultra rápido para explorar el espacio! Con este cohete podemos empezar a observar el espacio y los elementos que lo componen...<br> o simplemente divertirse un rato volando con la imaginación!",
     precio: 38.99,
@@ -312,7 +312,7 @@ export const productos = [
   {
     id: 23,
     producto: "Safari",
-    imagen: "./assets/images/set_safari.jpg",
+    imagen: "/images/set_safari.jpg",
     descripcion: "Te apetece un safari por la Sabana?",
     precio: 56.99,
     edad: "Para niños desde 3 años",
@@ -325,7 +325,7 @@ export const productos = [
   {
     id: 24,
     producto: "Set cocina",
-    imagen: "./assets/images/set-kitchen.jpg",
+    imagen: "/images/set-kitchen.jpg",
     descripcion:
       "Qué divertido es cocinar! De qué equipo eres, ¿dulce o salado? <br> Con este set los niños podrán acercarse al arte de cocinar. Quién sabe... A lo mejor pronto empezarán a ayudar en la elaboración de platos para toda la familia!",
     precio: 95.99,
@@ -338,7 +338,7 @@ export const productos = [
   {
     id: 25,
     producto: "Set matematicas",
-    imagen: "./assets/images/set-math3.jpg",
+    imagen: "/images/set-math3.jpg",
     descripcion:
       "Te apetece aprender a sumar y restar con bolitas fluffy? Estas bolitas son agradables al tacto y tienen muchos colores! <br> Aprender a sumar nunca fue tan divertido!",
     precio: 34.99,
@@ -351,7 +351,7 @@ export const productos = [
   {
     id: 26,
     producto: "Hora del té",
-    imagen: "./assets/images/set-tea-time.png",
+    imagen: "/images/set-tea-time.png",
     descripcion:
       "Ya es la hora del té? Esta será tu vajilla favorita de ahora en adelante! <br> Un precioso set para las tardes en el jardín con tu familia y amigos! Conoces algún personaje al que le gusta tomar el té con sus amigos en el jardín?",
     precio: 89.99,
@@ -364,7 +364,7 @@ export const productos = [
   {
     id: 27,
     producto: "Animales del bosque",
-    imagen: "./assets/images/set-wood.jpg",
+    imagen: "/images/set-wood.jpg",
     descripcion:
       "Un set en el que te puedes adentrar al bosque y conocer sus habitantes. Quizas os hacéis amigos! <br> Este precioso set contiene con varios animales y también su habitat. <br>Con estos juguetes los niños aprenderán más sobre los animales mientras se pasan en grande!",
     precio: 57.99,
@@ -378,7 +378,7 @@ export const productos = [
   {
     id: 28,
     producto: "Ovejas",
-    imagen: "./assets/images/sheeps.jpg",
+    imagen: "/images/sheeps.jpg",
     descripcion:
       "Unas cuantas ovejitas pastando en y disfrutando de su tranquilidad. Este set cuenta con una familia de ovejas, varias rocas y un pino, para que puedan echar una siesta en la sombra. <br> Son amimales domésticos o salvajes? Qué comen? Aprende esto y más con esté bonito set.",
     precio: 31.99,
@@ -392,7 +392,7 @@ export const productos = [
   {
     id: 29,
     producto: "Taxi",
-    imagen: "./assets/images/taxi.png",
+    imagen: "/images/taxi.png",
     descripcion:
       "El taxi más molón de la ciudad! Donde llevarás a tus amigos con tu nuevo coche? <br> El diseño de este juguete es único, inspirado el los clásicos taxis de Nueva York. Su diseño es increíble, ¿verdad?",
     precio: 51.99,
@@ -405,7 +405,7 @@ export const productos = [
   {
     id: 30,
     producto: "Tren",
-    imagen: "./assets/images/train.jpg",
+    imagen: "/images/train.jpg",
     descripcion:
       'Qué tren tan molón! Sabes qué es un tren de carga? Qué materiales puede transportar? Sobre qué se mueve el tren? <br> Hay muchas cosas de los trenes que nos gustan, pero lo que más nos gusta es el sonido "Tu-tuuuu!"',
     precio: 51.99,
@@ -418,7 +418,7 @@ export const productos = [
   {
     id: 31,
     producto: "Extreterrestre",
-    imagen: "./assets/images/ufo-alien.png",
+    imagen: "/images/ufo-alien.png",
     descripcion:
       "El extraterrestre más molón de todo el Universo! Este juguete tan bonito está compuesto por varias piezas y es desmontable. <br> A que es el extraterreste más bonito y amigable que habeis visto nunca!",
     precio: 39.99,
@@ -431,7 +431,7 @@ export const productos = [
   {
     id: 32,
     producto: "Estación meteorológica",
-    imagen: "./assets/images/weather.jpg",
+    imagen: "/images/weather.jpg",
     descripcion:
       "Sabes qué tiempo hace fuera? Si la respuesta es no, este juguete te ayudará a aprender. <br> Así sabras si llevarte un paraguas o unas gafas de sol... y saber si este fin de semana te podrás ir al parque a jugar!",
     precio: 54.99,
@@ -444,7 +444,7 @@ export const productos = [
   {
     id: 33,
     producto: "Leñador",
-    imagen: "./assets/images/woodcutter.jpg",
+    imagen: "/images/woodcutter.jpg",
     descripcion:
       "Un leñador que está recogiendo leña para que su familia esté calentita durante el invierno. <br> Sabes para qué se utiliza la madera? Conoces su tacto? Y su olor? De donde se consigue este material? <br> Aprende todo esto y más con tu nievo amigo el leñador.",
     precio: 36.99,
@@ -458,7 +458,7 @@ export const productos = [
   {
     id: 34,
     producto: "Puzzle abstracto",
-    imagen: "./assets/images/wooden-rokcs.jpg",
+    imagen: "/images/wooden-rokcs.jpg",
     descripcion:
       "Son rocas o es madera? Te he pillado! Es madera! <br> A ver si puedes hacer una torre sin que se caiga! Este puzzle con su diseño tan original puede un pasatiempo muy divertido!",
     precio: 39.99,
@@ -471,7 +471,7 @@ export const productos = [
   {
     id: 35,
     producto: "Palabras",
-    imagen: "./assets/images/words.jpg",
+    imagen: "/images/words.jpg",
     descripcion:
       "Sabes como se forman las palabras? Si conoces el abecedario ya tienes medio camino hecho! Esto será pan comido! <br> Con este juego los niños pueden aprender y descubrir nuevas palabras. La comunicación es una parte fundamental en el desarrollo de los niños.",
     precio: 31.99,
