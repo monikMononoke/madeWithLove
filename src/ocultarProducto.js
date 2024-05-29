@@ -91,7 +91,7 @@ export const handlerVolverCategorias = () => {
 
   const divProductosCategoria = document.querySelector(".productos-categoria");
 
-  if (volverCategorias.style.display === "inline-block") {
+  if (volverCategorias.style.display === "block") {
     volverCategorias.addEventListener("click", () => {
       headerCategorias.innerHTML = "CATEGORIAS";
       divProductosCategoria.style.display = "none";
