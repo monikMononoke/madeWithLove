@@ -1,5 +1,3 @@
-import "./styles.css";
-
 import { handlerCarruselMovil } from "./carruselHeroMobile.js";
 import { handlerDesplegarMenu } from "./desplegarMenu.js";
 import { mostrarVistaElegida } from "./controladorVistas.js";
