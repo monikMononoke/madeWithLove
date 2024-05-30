@@ -1152,12 +1152,85 @@ input[type="submit"] {
   font-size: 1.1rem;
 }
 
-.pagina-blog-entradas .blog__entradas-entrada {
+.blog__entradas-entrada {
   width: 25vw;
   border-radius: 6px;
 }
-.pagina-blog-entradas .blog__img {
+.blog__img {
   max-width: 350px;
+}
+
+.imagen-producto {
+  height: 300px;
+  width: auto;
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.volver-productos-categoria {
+  display: none;
+}
+
+.volver-categorias {
+  display: none;
+}
+
+.contenedor-entrada {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  height: 100%;
+  width: 90%;
+  max-width: 1400px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.imagen-entrada .blog__imagen-entrada {
+  width: 50%;
+  max-width: 500px;
+  padding: 50px 0 50px 0;
+  height: 100%;
+}
+
+.titulo-contenido {
+  width: 40%;
+}
+
+.titulo-contenido p {
+  font-size: 1.2rem;
+  font-family: var(--p-font-family);
+  height: 100%;
+  text-align: justify;
+}
+
+.titulo-contenido h2 {
+  font-family: var(--nav-font-family);
+  font-size: x-large;
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.volver-entradas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  font-family: var(--nav-font-family);
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -1384,6 +1457,67 @@ input[type="submit"] {
     padding: 8px;
   }
 
+  .blog__entradas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+
+  .blog__container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .pagina-blog {
+    display: flex;
+  }
+
+  .pagina-blog-entradas {
+    padding: 1rem;
+    width: 100vw;
+  }
+
+  .blog__entradas-entrada {
+    border-radius: 6px;
+    width: 45vw;
+  }
+
+  .contenedor-entrada {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .imagen-entrada {
+    align-self: center;
+    height: 50vh;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .imagen-entrada img {
+    transform: translateY(-50%);
+  }
+
+  .contenedor-entrada {
+    flex-shrink: 2;
+    padding: 2rem;
+  }
+
+  .titulo-contenido {
+    width: 80vw;
+    justify-content: center;
+    padding: 2rem;
+  }
+
   footer {
     position: relative;
   }
@@ -1526,17 +1660,24 @@ input[type="submit"] {
     border-radius: 6px;
   }
 
-  .blog__container {
+  .blog__container,
+  .pagina-blog {
     width: 100%;
     max-width: 400px;
     margin: 0;
     padding: 1rem;
   }
 
-  .blog__entradas {
+  .blog__entradas,
+  .pagina-blog-entradas {
     display: flex;
     flex-direction: column;
     font-family: var(--p-font-family);
+  }
+
+  .pagina-blog-entradas > .blog__entradas-entrada {
+    border-radius: 6px;
+    width: 90vw;
   }
 
   .blog__entradas-entrada {
@@ -1555,77 +1696,4 @@ input[type="submit"] {
     padding: 0;
     margin: 0;
   }
-}
-
-.imagen-producto {
-  height: 300px;
-  width: auto;
-}
-
-.productos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.volver-productos-categoria {
-  display: none;
-}
-
-.volver-categorias {
-  display: none;
-}
-
-.contenedor-entrada {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
-  height: 100%;
-  width: 90%;
-  max-width: 1400px;
-  background-color: white;
-  margin: 0 auto;
-}
-
-.imagen-entrada {
-  width: 50%;
-  max-width: 500px;
-  padding: 50px 0 50px 0;
-  height: 100%;
-}
-
-.titulo-contenido {
-  width: 40%;
-}
-
-.titulo-contenido p {
-  font-size: 1.2rem;
-  font-family: var(--p-font-family);
-  height: 100%;
-  text-align: justify;
-}
-
-.titulo-contenido h2 {
-  font-family: var(--nav-font-family);
-  font-size: x-large;
-  margin-bottom: 20px;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-.volver-entradas {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: #333;
-  font-family: var(--nav-font-family);
-  font-weight: 600;
-  font-size: 1.2rem;
 }
