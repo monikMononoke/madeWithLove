@@ -1474,10 +1474,6 @@ input[type="submit"] {
     padding: 1rem;
   }
 
-  .pagina-blog {
-    display: flex;
-  }
-
   .pagina-blog-entradas {
     padding: 1rem;
     width: 100vw;
@@ -1660,8 +1656,7 @@ input[type="submit"] {
     border-radius: 6px;
   }
 
-  .blog__container,
-  .pagina-blog {
+  .blog__container {
     width: 100%;
     max-width: 400px;
     margin: 0;
