@@ -6,7 +6,8 @@ const enlaceBlog = document.querySelector("#enlace-blog");
 export const handlerMostrarPaginaBlog = () => {
   enlaceBlog.addEventListener("click", () => {
     const divEntrada = document.querySelector(".contenedor-entrada");
-    if (!divEntrada) {
+    const todasLasEntradas = document.querySelector(".pagina-blog-entradas");
+    if (!divEntrada && !todasLasEntradas) {
       pintarEntradasBlog();
     } else {
       paginaBlog.removeChild(divEntrada);
