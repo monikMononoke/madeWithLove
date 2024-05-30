@@ -3,6 +3,7 @@ import {
   loginForm,
   main,
   paginaSubcategorias,
+  paginaBlog,
 } from "./constantes.js";
 import { carrito } from "./productoCesta.js";
 
@@ -29,6 +30,9 @@ export const mostrarVistaElegida = () => {
         case "#subcategorias":
           mostrarVistaSubcategorias();
           break;
+        case "#blog":
+          mostrarVistaBlog();
+          break;
       }
     });
   });
@@ -43,6 +47,7 @@ const mostrarVistaCarrito = () => {
     paginaTodosProductos.style.display = "none";
     loginForm.style.display = "none";
     main.style.display = "none";
+    paginaBlog.style.display = "none";
   }
 };
 
@@ -53,6 +58,7 @@ const mostrarVistaLogin = () => {
     divCarrito.style.display = "none";
     paginaTodosProductos.style.display = "none";
     main.style.display = "none";
+    paginaBlog.style.display = "none";
   }
 };
 
@@ -63,12 +69,25 @@ const mostrarVistaPaginaProductos = () => {
     divCarrito.style.display = "none";
     loginForm.style.display = "none";
     main.style.display = "none";
+    paginaBlog.style.display = "none";
   }
 };
 
 const mostrarVistaSubcategorias = () => {
   paginaSubcategorias.style.display = "flex";
   if (paginaSubcategorias.style.display === "flex") {
+    divCarrito.style.display = "none";
+    loginForm.style.display = "none";
+    main.style.display = "none";
+    paginaTodosProductos.style.display = "none";
+    paginaBlog.style.display = "none";
+  }
+};
+
+const mostrarVistaBlog = () => {
+  paginaBlog.style.display = "flex";
+  if (paginaBlog.style.display === "flex") {
+    paginaSubcategorias.style.display = "none";
     divCarrito.style.display = "none";
     loginForm.style.display = "none";
     main.style.display = "none";

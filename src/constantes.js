@@ -36,3 +36,5 @@ export const loginForm = document.querySelector(".login");
 export const paginaSubcategorias = document.querySelector(
   ".pagina-subcategorias"
 );
+
+export const paginaBlog = document.querySelector(".pagina-blog");

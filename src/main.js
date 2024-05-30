@@ -7,6 +7,8 @@ import { handlerMostrarProductoDestacado } from "./mostrarProducto.js";
 import { handlerMostrarTodosLosProductos } from "./todosLosProductos.js";
 import { handlerMostrarCategorias } from "./categoriasPorEdad.js";
 import { handlerSubcategorias } from "./paginaSubcategorias.js";
+import { handlerMostrarPaginaBlog } from "./paginaBlog.js";
+import { crearDivEntradas } from "./seccionBlog.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   handlerCarruselMovil();
@@ -23,3 +25,7 @@ handlerMostrarCategorias();
 
 handlerMostrarProductoDestacado();
 handlerMostrarTodosLosProductos();
+
+handlerMostrarPaginaBlog();
+
+crearDivEntradas();

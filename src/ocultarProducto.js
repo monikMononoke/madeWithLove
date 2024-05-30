@@ -71,12 +71,12 @@ const handlerVolverProductosCategoria = (divProducto) => {
   const divProductosCategoria = document.querySelector(".productos-categoria");
 
   if (divProductosCategoria && divProductosCategoria.style.display === "none") {
-    volverProductosCategoria.style.display = "inline-block";
+    volverProductosCategoria.style.display = "block";
     volverCategorias.style.display = "none";
     volverProductosCategoria.addEventListener("click", () => {
       divProductosCategoria.style.display = "flex";
       if (divProducto) {
-        volverCategorias.style.display = "inline-block";
+        volverCategorias.style.display = "block";
         volverProductosCategoria.style.display = "none";
         divProducto.parentElement.removeChild(divProducto);
       }
