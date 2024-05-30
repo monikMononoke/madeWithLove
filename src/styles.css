@@ -1190,15 +1190,22 @@ input[type="submit"] {
   height: 100%;
   width: 90%;
   max-width: 1400px;
+  border-radius: 4px;
   background-color: white;
   margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.imagen-entrada .blog__imagen-entrada {
+.imagen-entrada {
   width: 50%;
   max-width: 500px;
   padding: 50px 0 50px 0;
   height: 100%;
+}
+
+.blog__img-entrada {
+  border-radius: 8px;
 }
 
 .titulo-contenido {
