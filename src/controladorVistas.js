@@ -84,7 +84,7 @@ const mostrarVistaSubcategorias = () => {
   }
 };
 
-const mostrarVistaBlog = () => {
+export const mostrarVistaBlog = () => {
   paginaBlog.style.display = "flex";
   if (paginaBlog.style.display === "flex") {
     paginaSubcategorias.style.display = "none";
