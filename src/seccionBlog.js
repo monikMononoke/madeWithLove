@@ -1,4 +1,7 @@
+import { mostrarVistaBlog } from "./controladorVistas.js";
 import { entradasBlog } from "./entradasBlog.js";
+import { paginaBlog } from "./constantes.js";
+import { pintarEntradasBlog } from "./paginaBlog.js";
 
 const seccionBlog = document.querySelector(".blog__container");
 
@@ -34,7 +37,36 @@ const recogerIndexEntrada = () => {
     enlace.addEventListener("click", () => {
       const indexId = enlace.getAttribute("data-id");
       const index = parseInt(indexId);
-      console.log(index);
+      mostrarVistaBlog();
+      const divEntrada = document.querySelector(".contenedor-entrada");
+      if (!divEntrada) {
+        mostrarEntradaEnPaginaBlog(index);
+      }
     });
+  });
+};
+
+const mostrarEntradaEnPaginaBlog = (index) => {
+  const divEntrada = document.createElement("div");
+  divEntrada.classList.add("contenedor-entrada");
+
+  divEntrada.innerHTML = `
+  <div class="imagen-entrada">
+  <img class="blog__img-entrada" src="${entradasBlog[index].imagen}" alt="${entradasBlog[index].altImagen}"/>
+  </div>
+
+  <div class="titulo-contenido">
+  <a href="#blog" class="volver-entradas"> \< Volver atrás</a>
+  <h2>${entradasBlog[index].titulo}</h2>
+      <p>${entradasBlog[index].contenido}</p>
+    </div>
+      `;
+
+  paginaBlog.appendChild(divEntrada);
+
+  const enlaceVolver = document.querySelector(".volver-entradas");
+  enlaceVolver.addEventListener("click", () => {
+    paginaBlog.removeChild(divEntrada);
+    pintarEntradasBlog();
   });
 };

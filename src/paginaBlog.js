@@ -7,6 +7,7 @@ export const handlerMostrarPaginaBlog = () => {
   enlaceBlog.addEventListener("click", () => {
     const divEntrada = document.querySelector(".contenedor-entrada");
     const todasLasEntradas = document.querySelector(".pagina-blog-entradas");
+
     if (!divEntrada && !todasLasEntradas) {
       pintarEntradasBlog();
     } else {
@@ -53,7 +54,7 @@ const recogerIndexEntrada = () => {
   });
 };
 
-export const pintarEntrada = (index) => {
+const pintarEntrada = (index) => {
   const divEntrada = document.createElement("div");
   divEntrada.classList.add("contenedor-entrada");
 
@@ -76,7 +77,7 @@ export const pintarEntrada = (index) => {
   volverATodasLasEntradas();
 };
 
-const volverATodasLasEntradas = () => {
+export const volverATodasLasEntradas = () => {
   const enlaceVolver = document.querySelector(".volver-entradas");
   if (enlaceVolver && enlaceVolver !== undefined) {
     enlaceVolver.addEventListener("click", () => {
