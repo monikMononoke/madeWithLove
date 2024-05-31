@@ -56,7 +56,7 @@ const mostrarEntradaEnPaginaBlog = (index) => {
   </div>
 
   <div class="titulo-contenido">
-  <a href="#blog" class="volver-entradas"> \< Volver atrás</a>
+  <a href="#blog" class="volver-entradas"> \< Ver todas las entradas</a>
   <h2>${entradasBlog[index].titulo}</h2>
       <p>${entradasBlog[index].contenido}</p>
     </div>
