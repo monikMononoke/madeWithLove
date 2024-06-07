@@ -283,6 +283,11 @@ main {
   width: 100%;
 }
 
+h2 {
+  font-weight: 500;
+  padding-left: 1rem;
+}
+
 /* HERO */
 .hero {
   display: flex;
@@ -961,7 +966,8 @@ h1 {
   font-family: var(--p-font-family);
 }
 
-.procesar-pedido {
+.procesar-pedido,
+.procesar-siguiente {
   background-color: #333;
   color: white;
   font-weight: 400;
@@ -971,6 +977,81 @@ h1 {
 .procesar h3 {
   padding: 1.8rem;
   font-weight: 400;
+}
+
+.div-formulario-pedido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+}
+
+.formulario-pedido {
+  font-family: var(--p-font-family);
+  font-size: var(--p-font-size);
+}
+
+.formulario-pedido input {
+  margin-bottom: 12px;
+  margin-top: 5px;
+  border-radius: 2px;
+  border: 1px solid grey;
+}
+
+.formulario-envio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.metodo-envio,
+.metodo-pago {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.metodo-envio h2,
+.metodo-pago h2 {
+  font-family: var(--nav-font-family);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: lightgray;
+  padding: 12px;
+  font-family: var(--nav-font-family);
+  font-size: 1.3rem;
+  font-weight: 300;
+  width: 235px;
+}
+
+.label-input input[type="radio"] {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  background: #0a0909;
+  border: #0a0909;
+}
+
+.label-input input[type="radio"]:checked {
+  background: #0a0909;
+  border: #0a0909;
 }
 
 /*  ICONO USUARIO - FORMULARIO DE INICIO DE SESIÓN */
@@ -1011,7 +1092,8 @@ h1 {
   border-radius: 5px;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   background-color: #333;
   color: white;
   height: 30px;
@@ -1067,7 +1149,8 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.saludar-usuario {
+.saludar-usuario,
+.pedido-realizado {
   font-size: xx-large;
   font-family: var(--nav-font-family);
   color: #333;
@@ -1697,5 +1780,19 @@ input[type="submit"] {
     line-height: 60px;
     padding: 0;
     margin: 0;
+  }
+
+  .div-formulario-pedido {
+    padding-top: 16px;
+    flex-direction: column;
+  }
+
+  .formulario-envio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    margin: 0 auto;
   }
 }

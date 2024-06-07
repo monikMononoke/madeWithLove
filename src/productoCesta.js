@@ -39,7 +39,7 @@ const agregarProductoAlCarrito = (id) => {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 
-const mostrarCarrito = (carrito) => {
+export const mostrarCarrito = (carrito) => {
   const listaCarrito = document.querySelector(".carrito");
 
   listaCarrito.innerHTML = "";

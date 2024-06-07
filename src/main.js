@@ -9,6 +9,7 @@ import { handlerMostrarCategorias } from "./categoriasPorEdad.js";
 import { handlerSubcategorias } from "./paginaSubcategorias.js";
 import { handlerMostrarPaginaBlog } from "./paginaBlog.js";
 import { crearDivEntradas } from "./seccionBlog.js";
+import { procesarPedido } from "./procesarPedido.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   handlerCarruselMovil();
@@ -19,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
 handlerSubcategorias();
 
 cargarCarrito();
+procesarPedido();
+
 mostrarFormulario();
 
 handlerMostrarCategorias();
